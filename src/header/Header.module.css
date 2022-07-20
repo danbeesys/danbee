@@ -1,0 +1,36 @@
+.app__logo {
+    height: 8vmin;
+    pointer-events: none;
+}
+
+.app__header__box {
+    background-color: #2d2d31;
+    min-height: 60px;
+    flex-direction: row;
+    color: #e8dfc2;
+}
+
+.app__header__plain__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__header__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.app_header__banner {
+    text-decoration: none;
+    color: #e8dfc2;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.toggle__img {
+    margin: 10px;
+    display: grid;
+    height: 7vmin;
+}

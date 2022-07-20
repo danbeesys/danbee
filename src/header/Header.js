@@ -38,7 +38,7 @@ function Header() {
     return (
         <div className={style.app__header__box}>
             <div className={style.app__header__plain__box}>
-                <Link to={"/"} className={style.app_header__banner}>
+                <Link to={"/danbee"} className={style.app_header__banner}>
                     <header className={style.app__header__logo}>
                     <img src={logo} className={style.app__logo} alt="logo"/>
                     <h2>단비 심리 상담 연구소</h2>

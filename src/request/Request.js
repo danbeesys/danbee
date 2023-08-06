@@ -1,4 +1,5 @@
 import Header from "../header/Header";
+import Payment from "./Payment";
 
 
 function Request() {
@@ -35,6 +36,12 @@ function Request() {
             <div>
                 (필수) 개인정보수집 및 활용동의서       ◎ 동의합니다.
             </div>
+            <div>
+                신청하기
+            </div>
+            <p></p>
+            <p></p>
+            <Payment></Payment>
             <div>
                 신청하기
             </div>

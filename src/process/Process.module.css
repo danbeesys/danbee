@@ -1,0 +1,8 @@
+.process__box {
+    display: flex;
+}
+
+.process__arrow {
+    width: 100px;
+    white-space: pre-wrap;
+}

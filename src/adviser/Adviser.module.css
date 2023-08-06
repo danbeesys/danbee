@@ -16,18 +16,13 @@
 }
 
 .list {
-    font-size: 3vmin;
+    font-size: 20pt;
     text-align: left;
     font-family: sans-serif;
     white-space: pre-wrap;
 }
 
 .abbreviation{
-    font-size: 3vmin;
+    font-size: 10pt;
     text-align: right;
-}
-
-.profile {
-    font-size: 1vmin;
-    white-space: pre-wrap;
 }

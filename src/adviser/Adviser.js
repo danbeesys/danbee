@@ -2,8 +2,7 @@ import Header from "../header/Header";
 import Identity from "./Identity";
 import picture from "./pic.png";
 import style from "./Adviser.module.css";
-import {useState} from "react";
-import {click} from "@testing-library/user-event/dist/click";
+import {useState} from "react";;
 
 function Adviser() {
     const introString = "안녕하세요?\n" +
@@ -15,7 +14,7 @@ function Adviser() {
         "갈등과 괴로움, 혼란스러운 마음이 들 때 당신의 이야기에 귀를 기울이고, 마음의 소리를 듣겠습니다.\n" +
         "감사합니다.";
 
-    const [clicked, setClicked] = useState(true);
+    const [clicked, setClicked] = useState(false);
 
     const toggle = () => {
         console.log("clicked")

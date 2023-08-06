@@ -26,3 +26,8 @@
     font-size: 3vmin;
     text-align: right;
 }
+
+.profile {
+    font-size: 1vmin;
+    white-space: pre-wrap;
+}

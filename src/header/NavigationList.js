@@ -19,7 +19,7 @@ function NavigationList({flex, toggle}) {
         <Link to={"/danbee"} className={style.elem}>소개</Link>
         <Link to={"/adviser"} className={style.elem}>상담사 약력</Link>
         <Link to={"/process"} className={style.elem}>상담/절차</Link>
-        <Link to={"/danbee"} className={style.elem}>가나다바라마사아</Link>
+        <Link to={"/psychometry"} className={style.elem}>심리검사</Link>
     </div>
 }
 

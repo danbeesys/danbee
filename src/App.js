@@ -8,11 +8,13 @@ import Adviser from "./adviser/Adviser"
 import Directions from "./direction/Directions";
 import Process from "./process/Process";
 import Request from "./request/Request";
+import Psychometry from "./psychometry/Psychometry";
 
 function App() {
   return (
       <BrowserRouter>
             <Routes>
+                <Route path="/psychometry" element={<Psychometry />} />
                 <Route path="/request" element={<Request />} />
                 <Route path="/process" element={<Process />} />
                 <Route path="/directions" element={<Directions />} />

@@ -20,6 +20,7 @@ function NavigationList({flex, toggle}) {
         <Link to={"/adviser"} className={style.elem}>상담사 약력</Link>
         <Link to={"/process"} className={style.elem}>상담/절차</Link>
         <Link to={"/psychometry"} className={style.elem}>심리검사</Link>
+        <Link to={"/story"} className={style.elem}>단비 스토리</Link>
     </div>
 }
 

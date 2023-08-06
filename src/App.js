@@ -9,11 +9,13 @@ import Directions from "./direction/Directions";
 import Process from "./process/Process";
 import Request from "./request/Request";
 import Psychometry from "./psychometry/Psychometry";
+import Story from "./story/Story";
 
 function App() {
   return (
       <BrowserRouter>
             <Routes>
+                <Route path="/story" element={<Story />} />
                 <Route path="/psychometry" element={<Psychometry />} />
                 <Route path="/request" element={<Request />} />
                 <Route path="/process" element={<Process />} />

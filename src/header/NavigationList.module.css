@@ -7,16 +7,20 @@
     text-decoration: none;
     text-align: center;
     font-size: 15px;
-    color: #e8dfc2;
+    color: #416E2C;
+    font-family: Verdana, Arial, "Helvetica Neue", sans-serif;
+    font-weight: bold;
 }
 
 .elem:hover {
-    background-color: gray;
+    background-color: #928574;
 }
 
 .horizon {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    color: #416E2C;
 }
 
 .vertical {

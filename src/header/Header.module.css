@@ -4,10 +4,9 @@
 }
 
 .app__header__box {
-    background-color: #2d2d31;
+    background-color: #D3C6B0;
     min-height: 60px;
     flex-direction: row;
-    color: #e8dfc2;
 }
 
 .app__header__plain__box {
@@ -20,11 +19,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 75px
 }
 
 .app_header__banner {
     text-decoration: none;
-    color: #e8dfc2;
+    color: #416E2C;
     font-size: 20px;
     font-weight: 300;
 }

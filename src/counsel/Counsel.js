@@ -7,9 +7,7 @@ import ChangeViewComponent from "../intro/ChangeViewComponent";
 function Counsel() {
     return <div>
         <Header />
-        <div className={style.boxes}>
-            <ChangeViewComponent></ChangeViewComponent>
-        </div>
+        <ChangeViewComponent></ChangeViewComponent>
     </div>
 }
 

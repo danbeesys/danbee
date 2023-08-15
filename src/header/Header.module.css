@@ -1,18 +1,18 @@
 .app__logo {
-    height: 8vmin;
     pointer-events: none;
+    height: auto;
+    max-height: 100%;
 }
 
 .app__header__box {
-    background-color: #2d2d31;
-    min-height: 60px;
+    background-color: #D3C6B0;
     flex-direction: row;
-    color: #e8dfc2;
 }
 
 .app__header__plain__box {
     display: flex;
     justify-content: space-between;
+    height: 7vmin;
 }
 
 .app__header__logo {
@@ -20,17 +20,21 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    width: auto;
 }
 
 .app_header__banner {
     text-decoration: none;
-    color: #e8dfc2;
+    color: #416E2C;
     font-size: 20px;
     font-weight: 300;
+    height: 7vmin;
+    text-align: left;
 }
 
 .toggle__img {
     margin: 10px;
     display: grid;
-    height: 7vmin;
+    height: 5vmin;
 }

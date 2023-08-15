@@ -1,5 +1,5 @@
 import style from "./Header.module.css";
-import logo from "../logo.svg";
+import logo from "./logo.png";
 import {useEffect, useState} from "react";
 import menu from "./menu.png";
 import menu_cancel from "./menu_cancel.png";

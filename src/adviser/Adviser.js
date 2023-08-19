@@ -1,5 +1,5 @@
 import Header from "../header/Header";
-import Identity from "./Identity";
+import IdentityTable from "./IdentityTable";
 import picture from "./pic.png";
 import style from "./Adviser.module.css";
 import {useState} from "react";;
@@ -28,7 +28,7 @@ function Adviser() {
                 <img src={picture} className={style.picture} alt="logo"/>
                 <div onClick={toggle}>인적사항 (바로보기)</div>
                 <div style={{ display: clicked ? "block" : "none" }}>
-                    <Identity></Identity>
+                    <IdentityTable></IdentityTable>
                 </div>
             </div>
             <ul>

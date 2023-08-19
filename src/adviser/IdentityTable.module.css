@@ -5,7 +5,7 @@ body {
 
 table {
     border: 1px #a39485 solid;
-    font-size: .2em;
+    font-size: .5em;
     box-shadow: 0 2px 5px rgba(0,0,0,.25);
     width: 100%;
     border-collapse: collapse;
@@ -15,6 +15,7 @@ table {
 
 th {
     text-align: center;
+    background: #f3e3d3;
 }
 
 thead {
@@ -24,7 +25,7 @@ thead {
 }
 
 td, th {
-    padding: 1em .5em;
+    padding: .4em .5em;
     vertical-align: middle;
     height: min-content;
 }
@@ -37,22 +38,4 @@ td {
 
 a {
     color: #73685d;
-}
-
-@media all and (max-width: 768px) {
-
-    table, thead, tbody, th, td, tr {
-        display: block;
-    }
-
-    th {
-        text-align: right;
-    }
-
-    table {
-        position: relative;
-        padding-bottom: 0;
-        border: none;
-        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    }
 }

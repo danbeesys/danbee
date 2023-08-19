@@ -5,8 +5,8 @@ import IdentityTable from "./IdentityTable";
 function IdentityModal({setModalClose}) {
     return (
         <div className={style.Modal}>
-            <IdentityTable></IdentityTable>
-            <button onClick={setModalClose}>닫기</button>
+            <IdentityTable/>
+            <button className={style.Button} onClick={setModalClose}>닫기</button>
         </div>
     );
 };

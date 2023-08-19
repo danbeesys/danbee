@@ -1,4 +1,4 @@
-import style from "./Identity.module.css"
+import style from "./IdentityTable.module.css"
 
 function IdentityTable() {
     return <table className={style.table__css}>

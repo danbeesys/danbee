@@ -1,8 +1,8 @@
 import Header from "../header/Header";
-import IdentityTable from "./IdentityTable";
 import picture from "./pic.png";
 import style from "./Adviser.module.css";
-import {useState} from "react";;
+import {useState} from "react";
+import IdentityModal from "./IdentityModal";
 
 function Adviser() {
     const introString = "안녕하세요?\n" +
@@ -14,25 +14,28 @@ function Adviser() {
         "갈등과 괴로움, 혼란스러운 마음이 들 때 당신의 이야기에 귀를 기울이고, 마음의 소리를 듣겠습니다.\n" +
         "감사합니다.";
 
-    const [clicked, setClicked] = useState(false);
+    const [modal, setModal] = useState(false);
 
-    const toggle = () => {
-        console.log("clicked")
-        setClicked(!clicked);
+    const handleOpenModal = () => {
+        setModal(true);
+    }
+
+    const handleCloseModal = () => {
+        setModal(false);
     }
 
     return <div>
         <Header />
         <div className={style.main__box}>
-            <div>
-                <img src={picture} className={style.picture} alt="logo"/>
-                <div onClick={toggle}>인적사항 (바로보기)</div>
-                <div style={{ display: clicked ? "block" : "none" }}>
-                    <IdentityTable></IdentityTable>
-                </div>
-            </div>
             <ul>
-                <p className={style.content}>이순희 대표</p>
+                <div>
+                    <div>
+                        <img src={picture} className={style.picture} alt="logo"/>
+                        <div onClick={handleOpenModal}>인적사항 (바로보기)</div>
+                        {modal && <IdentityModal setModalClose={handleCloseModal}/>}
+                    </div>
+                    <p className={style.content}>이순희 대표</p>
+                </div>
                 <div className={style.list}>{introString}</div>
                 <div className={style.abbreviation}>단비심리상담연구소 대표 이순희</div>
             </ul>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/danbee/static/css/main.4ecbdab2.css",
-    "main.js": "/danbee/static/js/main.7149cb48.js",
+    "main.css": "/danbee/static/css/main.970e7c1e.css",
+    "main.js": "/danbee/static/js/main.f00051da.js",
     "static/js/787.a3a35d55.chunk.js": "/danbee/static/js/787.a3a35d55.chunk.js",
     "static/media/opening2.PNG": "/danbee/static/media/opening2.7b18c47b761b7443e8d3.PNG",
     "static/media/opening1.PNG": "/danbee/static/media/opening1.a99b8c50c569310486cd.PNG",
@@ -9,12 +9,12 @@
     "static/media/logo.png": "/danbee/static/media/logo.23007dc95bc4251570ac.png",
     "static/media/arrow.jpg": "/danbee/static/media/arrow.d6f501b54086200ce969.jpg",
     "index.html": "/danbee/index.html",
-    "main.4ecbdab2.css.map": "/danbee/static/css/main.4ecbdab2.css.map",
-    "main.7149cb48.js.map": "/danbee/static/js/main.7149cb48.js.map",
+    "main.970e7c1e.css.map": "/danbee/static/css/main.970e7c1e.css.map",
+    "main.f00051da.js.map": "/danbee/static/js/main.f00051da.js.map",
     "787.a3a35d55.chunk.js.map": "/danbee/static/js/787.a3a35d55.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ecbdab2.css",
-    "static/js/main.7149cb48.js"
+    "static/css/main.970e7c1e.css",
+    "static/js/main.f00051da.js"
   ]
 }

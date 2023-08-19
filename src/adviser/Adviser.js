@@ -28,7 +28,7 @@ function Adviser() {
         <Header />
         <div className={style.main__box}>
             <ul>
-                <div>
+                <div className={style.picture__modal__p}>
                     <div>
                         <img src={picture} className={style.picture} alt="logo"/>
                         <div onClick={handleOpenModal}>인적사항 (바로보기)</div>
@@ -36,7 +36,7 @@ function Adviser() {
                     </div>
                     <p className={style.content}>이순희 대표</p>
                 </div>
-                <div className={style.list}>{introString}</div>
+                <div className={style.intro}>{introString}</div>
                 <div className={style.abbreviation}>단비심리상담연구소 대표 이순희</div>
             </ul>
         </div>

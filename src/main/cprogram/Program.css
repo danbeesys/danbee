@@ -1,0 +1,12 @@
+.program-body {
+    padding-top: 15vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.program-body img {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}

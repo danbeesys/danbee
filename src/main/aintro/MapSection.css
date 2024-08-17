@@ -1,0 +1,27 @@
+.map-section {
+  display: flex;
+  margin-top: 40px;
+  padding: 0 10vw;
+}
+
+.map img {
+  flex: 1;
+  height: 400px;
+}
+
+.map-info {
+  flex: 1;
+  padding-left: 40px;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .map-section {
+    flex-direction: column;
+  }
+
+  .map-info {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}

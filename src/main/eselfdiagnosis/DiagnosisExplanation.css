@@ -1,0 +1,46 @@
+/* Image Explanation Styles */
+.diagnosis-explanations {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.diagnosis-item {
+  width: calc(30% - 20px);
+  margin-bottom: 20px;
+}
+
+.diagnosis-item img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.diagnosis-explanation {
+  background-color: var(--card-color);
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+}
+
+.diagnosis-explanation h3 {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.diagnosis-explanation p {
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .diagnosis-item {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .diagnosis-image-item {
+    width: 100%;
+  }
+}

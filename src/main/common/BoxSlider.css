@@ -1,0 +1,77 @@
+/* Box Slider Styles */
+.box-slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  
+  .box-slider {
+    width: 80%;
+    overflow: hidden;
+  }
+  
+  .box-wrapper {
+    display: flex;
+    width: 150%; /* To accommodate 3 boxes */
+    transform: translateX(-33.33%); /* Start with the middle box visible */
+    transition: transform 0.5s ease;
+  }
+
+  
+
+.box {
+    background-color: var(--card-color);
+    padding: 30px;
+    border-radius: 10px;
+    width: calc(87% / 3);
+    min-height: 200px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  .box h3 {
+    color: var(--accent-color);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .box p {
+    color: var(--text-color);
+    font-size: 1.1em;
+  }
+  
+  .arrow {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--accent-color);
+    cursor: pointer;
+    margin: 0 20px;
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .arrow:hover {
+    color: var(--primary-color);
+  }
+  
+
+  @media (max-width: 768px) {
+    .box-slider-container {
+      flex-direction: column;
+    }
+  
+    .box-slider {
+      width: 100%;
+    }
+  
+    .box {
+      width: 50%;
+    }
+  
+    .arrow {
+      margin: 10px 0;
+    }
+  }
+  

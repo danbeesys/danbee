@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './DiagnosisExplanation.css';
 
 export interface props {
@@ -7,10 +8,10 @@ export interface props {
 export interface DiagnosisExplanationContent {
     image: string;
     header: string;
-    body: string;
+    link: string;
   }
 
-function ImageExplanation(props: props) { 
+function DiagnosisExplanation(props: props) { 
     const contents = props.arrays;
     return (
       <div className="diagnosis-explanations">
@@ -18,8 +19,7 @@ function ImageExplanation(props: props) {
           <div key={index} className="diagnosis-item">
             <img src={content.image} alt={`Image ${index + 1}`} />
             <div className="diagnosis-explanation">
-              <h3>{content.header}</h3>
-              <p>{content.body}</p>
+              <Link to={content.link}><h3>{content.header}</h3></Link>
             </div>
           </div>
         ))}
@@ -28,4 +28,4 @@ function ImageExplanation(props: props) {
   };
   
 
-export default ImageExplanation;
+export default DiagnosisExplanation;

@@ -4,8 +4,10 @@ import Banner from './welcompage/Banner';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import NotFound from './main/common/NotFound';
 import Swiper from './main/common/Swiper';
-import Main from './main/MainView';
+import MainView from './main/MainView';
 import SelfDiagnosis from './main/eselfdiagnosis/SelfDiagnosis';
+import ParentDiagnosis from './main/eselfdiagnosis/parent/ParentDiagnosis';
+import ParentDiagnosisResult from './main/eselfdiagnosis/parent/ParentDiagnosisResult';
 
 const App: React.FC = () => {
   return (
@@ -13,40 +15,14 @@ const App: React.FC = () => {
       <BrowserRouter>
       <Routes>
         <Route path ="/danbee" element={<Banner />}></Route>
-        <Route path ="/danbee/main" element={<Main />}></Route>
+        <Route path ="/danbee/main" element={<MainView />}></Route>
         <Route path ="/danbee/diagnosis" element={<SelfDiagnosis />}></Route>
+        <Route path ="/danbee/diagnosis/parent" element={<ParentDiagnosis />}></Route>
+        <Route path ="/danbee/diagnosis/parent/result" element={<ParentDiagnosisResult />}></Route>
         <Route path ="*" element={<NotFound />}></Route>
       </Routes>
       </BrowserRouter>
     </div>
-  );
-};
-
-const LocationLogger: React.FC = () => {
-  const location = useLocation();
-  const [showPopup, setShowPopup] = useState(false);
-
-  useEffect(() => {
-    setShowPopup(true);
-
-    const timeoutId = setTimeout(() => {
-      setShowPopup(false);
-    }, 2000);
-
-    return () => clearTimeout(timeoutId);
-  }, [location]);
-
-  return (
-    <>
-      {showPopup && (
-        <>
-          <div className={`popup-overlay ${showPopup ? 'show' : ''}`}></div>
-          <div className={`popup-container ${showPopup ? 'show' : ''}`}>
-            <Swiper />
-          </div>
-        </>
-      )}
-    </>
   );
 };
 

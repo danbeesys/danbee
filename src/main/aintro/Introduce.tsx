@@ -9,7 +9,7 @@ import './Introduce.css';
 const Introduce: React.FC = () => {
     const [showProfile, setShowProfile] = useState(false);
     return (
-        <section id="intro">
+        <section id="intro" className='intro_body'>
             <Profile onClick={() => setShowProfile(true)} />
             {showProfile && (
             <div className="popup-overlay" onClick={() => setShowProfile(false)}>

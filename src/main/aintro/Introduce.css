@@ -1,3 +1,7 @@
+.intro_body {
+    padding-top: 15vh;
+}
+
 .popup-overlay {
   position: fixed;
   top: 0;

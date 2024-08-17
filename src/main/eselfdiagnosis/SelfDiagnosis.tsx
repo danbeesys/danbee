@@ -6,9 +6,9 @@ import activity from "../pic/20240610_125241.jpg";
 import DiagnosisExplanation, { DiagnosisExplanationContent } from './DiagnosisExplanation';
 
 const personal: DiagnosisExplanationContent[] = [
-    { image: activity, header: "부모양육태도 검사", body: "" },
-    { image: activity, header: "인터넷 중독 검사", body: "" },
-    { image: activity, header: "우울 검사", body: "" },
+    { image: activity, header: "부모양육태도 검사", link: "/danbee/diagnosis/parent" },
+    { image: activity, header: "인터넷 중독 검사", link: "" },
+    { image: activity, header: "우울 검사", link: "" },
   ];
 
 const SelfDiagnosis: React.FC = () => {

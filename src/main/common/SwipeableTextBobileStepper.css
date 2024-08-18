@@ -1,6 +1,7 @@
 .swipeable_text {
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding: 10vh 15vw;
+    background-color: var(--card-color);
+
 }
 
 .box-explaination {

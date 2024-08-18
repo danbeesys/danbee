@@ -1,14 +1,19 @@
-  
+.doctor-container {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Space between the two divs */
+}
+
+
 .doctor-image-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-right: 40px;
-  margin-top: 15vh;
+  align-items: left;
+  width: 300px;
 }
 
 .doctor-image-container img {
-  width: 300px;
+  width: 100%;
   height: 400px;
   object-fit: cover;
   margin-bottom: 20px;
@@ -16,10 +21,11 @@
 
 .doctor-image-container button {
   background-color: var(--accent-color);
+  width: 100%;
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -30,7 +36,6 @@
 .doctor-info {
   font-family: "Gowun Dodum", sans-serif;
   flex: 1;
-  padding: 0 10vw;
 }
 
 .doctor-info h3 {

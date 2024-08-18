@@ -3,7 +3,7 @@ import './Profile.css'
 
 const Profile: React.FC<{ onClick: () => void }> = ({ onClick }) => {
     return (
-      <div>
+      <div className="doctor-container">
         <div className="doctor-image-container">
           <img src={faceimg} alt="이미지" />
           <button onClick={onClick}>심리 전문가 소개</button>

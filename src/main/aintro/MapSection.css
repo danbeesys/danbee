@@ -24,4 +24,10 @@
     padding-left: 0;
     padding-top: 20px;
   }
+
+  .map img {
+    flex: 1;
+    height: 400px;
+    width: 70vw;
+  }
 }

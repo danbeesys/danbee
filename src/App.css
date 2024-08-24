@@ -21,11 +21,20 @@ body {
 }
 
 .App {
-  margin: 0 auto;
+  margin: 0 0;
 }
 
 .App h2 {
-  color: var(--primary-color)
+  color: var(--primary-color);
+  font-size: 40px;
+}
+
+.App h3 {
+  font-size: 20px;
+}
+
+.App p {
+  font-size: 18px;
 }
 
 .App-header {

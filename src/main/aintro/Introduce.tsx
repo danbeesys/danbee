@@ -10,8 +10,8 @@ const Introduce: React.FC = () => {
     const [showProfile, setShowProfile] = useState(false);
     return (
         <section id="intro" className='intro_body'>
-            <Profile onClick={() => setShowProfile(true)} />
-            {showProfile && (
+        <Profile onClick={() => setShowProfile(true)} />
+        {showProfile && (
             <div className="popup-overlay" onClick={() => setShowProfile(false)}>
             <div className="popup" onClick={e => e.stopPropagation()}>
               <h2>이순희</h2>

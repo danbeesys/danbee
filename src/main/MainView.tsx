@@ -10,6 +10,7 @@ import Navigation from "./common/Navigation";
 import SwipeableTextMobileStepper from "./common/SwipeableTextBobileStepper";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import ImageIntroduce from './ainrto_pic/ImageIntroduce';
 
 const MainView: React.FC = () => {
     const location = useLocation();
@@ -25,7 +26,7 @@ const MainView: React.FC = () => {
         <Navigation />
         <main className="main_css">
             <Introduce />
-            <SwipeableTextMobileStepper />
+            <ImageIntroduce />
             <Fields />
             <Program />
             <Process />

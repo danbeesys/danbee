@@ -10,9 +10,9 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    height: 15vh;
+    height: 5vh;
     font-family: "Do Hyeon", sans-serif;
-    font-size: 2.4vw;
+    font-size: 1.2vw;
   }
   
   .logo {
@@ -31,9 +31,9 @@
   }
   
   .main-nav a {
-    color: rgb(0, 0, 0);
+    color: #484848;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
     transition: color 0.3s ease;
   }
   

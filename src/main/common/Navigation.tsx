@@ -11,7 +11,7 @@ const Navigation: React.FC = () => {
           <Link to="/danbee/main#intro"><li>단비 소개</li></Link>
           { isMobile ? (<></>) : (<>
           <Link to="/danbee/main#fields"><li>상담 분야</li></Link>
-          <Link to="/danbee/main#program"><li>프로그램</li></Link>
+          <Link to="/danbee/main#program"><li>Special 프로그램</li></Link>
           <Link to="/danbee/main#process"><li>상담 절차</li></Link>
           <Link to="/danbee/main#story"><li>단비 스토리</li></Link></>)}
           <Link to="/danbee/diagnosis"><li>자가진단</li></Link>

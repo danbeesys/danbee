@@ -3,6 +3,8 @@ import Footer from "../common/Footer";
 import Navigation from "../common/Navigation";
 
 const Story: React.FC = () => {
+
+    // TODO : 공지사항 onclick event 및 h4 하위 팝업
     return (
     <section id="story" className='story-body'>
             <h2>단비 스토리</h2>

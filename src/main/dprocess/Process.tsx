@@ -12,6 +12,13 @@ const Process: React.FC = () => {
     processBlock.push({id: 5, content: "진단평가\n검사해석"});
     processBlock.push({id: 6, content: "치료 프로그램\n진행"});
 
+
+    /**
+     *      <h3>예약 방법</h3>
+            <p>전화문의 : 031-714-1714</p>
+            <p>카카오톡 : </p>
+            <p>인스타 : #</p>
+     */
     return (
         <section id="process" className='process-body'>
             <h2>상담절차</h2>
@@ -27,14 +34,10 @@ const Process: React.FC = () => {
                     <td>{"오전 10시 ~ 오후 5시"}</td>
                 </tr>
                 <tr>
-                    <th>{"일요일"}</th>
+                    <th>{"공휴일/일요일"}</th>
                     <td>{"휴무"}</td>
                 </tr>
             </tbody>
-            <h3>예약 방법</h3>
-            <p>전화문의 : 031-714-1714</p>
-            <p>카카오톡 : </p>
-            <p>인스타 : #</p>
             <h4>상담 방법</h4>
             <p>대면상담 또는 화상상담(ZOOM) 실시</p>
             <p>상담신청서</p>

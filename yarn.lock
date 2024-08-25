@@ -2452,6 +2452,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-image-gallery@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@types/react-image-gallery/-/react-image-gallery-1.2.4.tgz#17c2e3416a5c9ecab14588eac593d4a7aa583163"
+  integrity sha512-H0xpmT5rlSH0qiTvcUDCPDLRBi3J3Xa4COqaDqGb7ffLFpQoPAxpZdNuKCuThhFI0xJmNnMubZiD6B3kCBHtcw==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-swipeable-views-utils@^0.13.7":
   version "0.13.7"
   resolved "https://registry.yarnpkg.com/@types/react-swipeable-views-utils/-/react-swipeable-views-utils-0.13.7.tgz#9dd524c78612837779367ede885a0a8097444464"
@@ -8438,15 +8445,6 @@ prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2, 
     object-assign "^4.1.1"
     react-is "^16.13.1"
 
-prop-types@~15.7.2:
-  version "15.7.2"
-  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
-  integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
-  dependencies:
-    loose-envify "^1.4.0"
-    object-assign "^4.1.1"
-    react-is "^16.8.1"
-
 proxy-addr@~2.0.7:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.7.tgz#f19fe69ceab311eeb94b42e70e8c2070f9ba1025"
@@ -8642,6 +8640,11 @@ react-icons@^5.2.1:
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-5.2.1.tgz#28c2040917b2a2eda639b0f797bff1888e018e4a"
   integrity sha512-zdbW5GstTzXaVKvGSyTaBalt7HSfuK5ovrzlpyiWHAFXndXTdd/1hdDHI4xBM1Mn7YriT6aqESucFl9kEXzrdw==
 
+react-image-gallery@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/react-image-gallery/-/react-image-gallery-1.3.0.tgz#789035b12d8149bdd2ab296c155f989205077ffb"
+  integrity sha512-lKnPaOzxqSdujPFyl+CkVw0j1aYoNCHk61cvr1h7aahf5aWqmPcR9YhUB4cYrt5Tn5KHDaPUzYm5/+cX9WxzaA==
+
 react-images@^1.2.0-beta.7:
   version "1.2.0-beta.7"
   resolved "https://registry.yarnpkg.com/react-images/-/react-images-1.2.0-beta.7.tgz#8a5804f8a5d08a25e64180eecb43a77d4e023e16"
@@ -8657,7 +8660,7 @@ react-images@^1.2.0-beta.7:
     react-transition-group "^4.4.1"
     react-view-pager "^0.6.0"
 
-react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.1:
+react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -8680,14 +8683,6 @@ react-motion@^0.5.0:
     performance-now "^0.2.0"
     prop-types "^15.5.8"
     raf "^3.1.0"
-
-react-photo-gallery@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/react-photo-gallery/-/react-photo-gallery-8.0.0.tgz#04ff9f902a2342660e63e6817b4f010488db02b8"
-  integrity sha512-Y9458yygEB9cIZAWlBWuenlR+ghin1RopmmU3Vice8BeJl0Se7hzfxGDq8W1armB/ic/kphGg+G1jq5fOEd0sw==
-  dependencies:
-    prop-types "~15.7.2"
-    resize-observer-polyfill "^1.5.0"
 
 react-property@2.0.0:
   version "2.0.0"
@@ -9033,11 +9028,6 @@ resize-observer-polyfill@1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.0.tgz#660ff1d9712a2382baa2cad450a4716209f9ca69"
   integrity sha512-M2AelyJDVR/oLnToJLtuDJRBBWUGUvvGigj1411hXhAdyFWqMaqHp7TixW3FpiLuVaikIcR1QL+zqoJoZlOgpg==
-
-resize-observer-polyfill@^1.5.0:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
-  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
 
 resolve-cwd@^3.0.0:
   version "3.0.0"

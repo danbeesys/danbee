@@ -1,13 +1,15 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 /* Image Explanation Styles */
 .image-explanation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin: 40px 0;
+  margin: 40px 10%;
 }
 
 .image-item {
-  width: calc(50% - 20px);
+  width: 30%;
   margin-bottom: 20px;
 }
 

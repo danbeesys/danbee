@@ -7,7 +7,6 @@ import Process from './dprocess/Process';
 import Story from './fstory/Story';
 import Footer from "./common/Footer";
 import Navigation from "./common/Navigation";
-import SwipeableTextMobileStepper from "./common/SwipeableTextBobileStepper";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import ImageIntroduce from './ainrto_pic/ImageIntroduce';

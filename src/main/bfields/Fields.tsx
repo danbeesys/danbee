@@ -1,12 +1,11 @@
 import './Fields.css';
-import Navigation from "../common/Navigation";
 import ImageExplanation from "./ImageExplanation";
 import type {ImageExplanationContent} from "./ImageExplanation";
 
 import sangdamsil from "../pic/20240610_111632.jpg"
 import sangdamsil2 from "../pic/20240610_상담실 1.jpg"
 import activity from "../pic/20240610_125241.jpg";
-import Footer from "../common/Footer";
+
 
 const personal: ImageExplanationContent[] = [
     { image: sangdamsil, header: "아동, 청소년", body: "성장과정에서 마주하게 되는 우울, 불안, 스트레스, 낮은 자존감 등 심리 정서적 어려움의 원인을 찾아내고 건강하게 성장할 수 있도록 돕습니다" },

@@ -15,6 +15,8 @@ interface item {
   thumbnail: string,
   originalWidth ?: number,
   originalHeight ?: number,
+  thumbnailWidth ?: number,
+  thumbnailHeight ?: number,
   content?: string,
 }
 
@@ -30,6 +32,8 @@ const itemData: item[] = [
       thumbnail: photo1,
       originalWidth : 400,
       originalHeight : 300,
+      thumbnailWidth : 40,
+      thumbnailHeight : 40,
       content: "설명",
     },
     {
@@ -37,6 +41,8 @@ const itemData: item[] = [
       thumbnail: photo2,
       originalWidth : 400,
       originalHeight : 300,
+      thumbnailWidth : 40,
+      thumbnailHeight : 40,
       content: "설명",
     },
     {
@@ -44,6 +50,8 @@ const itemData: item[] = [
       thumbnail: photo3,
       originalWidth : 400,
       originalHeight : 300,
+      thumbnailWidth : 40,
+      thumbnailHeight : 40,
       content: "설명",
     },
     {
@@ -51,6 +59,8 @@ const itemData: item[] = [
       thumbnail: photo4,
       originalWidth : 400,
       originalHeight : 300,
+      thumbnailWidth : 40,
+      thumbnailHeight : 40,
       content: "설명",
     },
     {
@@ -58,6 +68,8 @@ const itemData: item[] = [
       thumbnail: photo5,
       originalWidth : 400,
       originalHeight : 300,
+      thumbnailWidth : 40,
+      thumbnailHeight : 40,
       content: "설명",
     },
     {
@@ -65,6 +77,8 @@ const itemData: item[] = [
       thumbnail: photo6,
       originalWidth : 400,
       originalHeight : 300,
+      thumbnailWidth : 40,
+      thumbnailHeight : 40,
       content: "설명",
     },
     {
@@ -72,6 +86,8 @@ const itemData: item[] = [
       thumbnail: photo7,
       originalWidth : 400,
       originalHeight : 300,
+      thumbnailWidth : 40,
+      thumbnailHeight : 40,
       content: "설명",
     },
     {
@@ -79,6 +95,8 @@ const itemData: item[] = [
       thumbnail: photo8,
       originalWidth : 400,
       originalHeight : 300,
+      thumbnailWidth : 40,
+      thumbnailHeight : 40,
       content: "설명",
     },
   ];

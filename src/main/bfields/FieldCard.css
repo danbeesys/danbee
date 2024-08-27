@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+.field_card {
+    float: right;
+    position: relative;
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.field_card h2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.field_card h4 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 15px 20px;
+    border-radius: 30px;
+}
+
+.field_card p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10%;
+}
+
+
+.field_card_pic {
+    width: 600px;
+    height: 300px;
+}

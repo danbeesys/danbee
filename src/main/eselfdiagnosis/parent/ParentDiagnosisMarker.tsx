@@ -9,10 +9,13 @@ import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 
 export interface DiagnosisPaperProps {
-    questions: string[];
+    loveQuestions:    string[];
+    denyQuestions:    string[];
+    freeQuestions:    string[];
+    controlQuestions: string[];
 }
 
-const ParentDiagnosisMarker: React.FC<DiagnosisPaperProps> = ({ questions }) => {
+const ParentDiagnosisMarker: React.FC<DiagnosisPaperProps> = ({ loveQuestions, denyQuestions, freeQuestions, controlQuestions }) => {
     const [scoreMap, setScoreMap] = useState(new Map<string, number>());
     const [couldConfirm, setCouldConfirm] = useState(true);
     const navigate = useNavigate();
@@ -20,7 +23,7 @@ const ParentDiagnosisMarker: React.FC<DiagnosisPaperProps> = ({ questions }) => 
     const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const answerEvent = (event.target as HTMLInputElement);
         setScoreMap(scoreMap.set(answerEvent.name, parseInt(answerEvent.value)));
-        setCouldConfirm(scoreMap.size !== questions.length);
+        setCouldConfirm(scoreMap.size !== loveQuestions.length);
     }
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -33,7 +36,7 @@ const ParentDiagnosisMarker: React.FC<DiagnosisPaperProps> = ({ questions }) => 
 
     return <form onSubmit={handleSubmit} className='supplier_body'>
         <FormControl>
-            {questions.map((question, index) => (
+            {loveQuestions.map((question, index) => (
                 <React.Fragment key={index}>
                     <FormLabel id={`question-${index}`} sx={{
                         fontSize: '45px',

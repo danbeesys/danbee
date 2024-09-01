@@ -1,14 +1,24 @@
 import Navigation from "../../common/Navigation";
 import ParentDiagnosisMarker from "./ParentDiagnosisMarker";
 
-const questions: string[] = [
-    "question1", "question2"
-]
+const loveQuestions: string[] = [
+    "어머니께서는 어린 자녀들이 놀고 있을 때 자녀들이 노는 방식으로 허물없이 함께 놀아주십니까?", "question2"
+];
+
+const denyQuestions: string[] = [];
+
+const freeQuestions: string[] = [];
+
+const controlQuestions: string[] = [];
 
 const ParentDiagnosis: React.FC = () => {
     return <div>
         <Navigation />
-        <ParentDiagnosisMarker questions={questions} />
+        <ParentDiagnosisMarker 
+        loveQuestions={loveQuestions} 
+        denyQuestions={denyQuestions}
+        freeQuestions={freeQuestions} 
+        controlQuestions={controlQuestions} />
     </div>;
 }
 

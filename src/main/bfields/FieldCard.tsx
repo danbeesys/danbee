@@ -1,4 +1,4 @@
-import sample from './pic/abc.jpg';
+import sample from './pic/abc.webp';
 import './FieldCard.css';
 import { useState } from 'react';
 import React from 'react';

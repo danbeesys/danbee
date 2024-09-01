@@ -15,11 +15,14 @@ const FieldCard: React.FC<FieldCardProp> = (props:FieldCardProp) => {
         <img src={sample} className='field_card_pic'>
         </img>
         <h2>{props.header}</h2>
-        <h4 onMouseOver={e => setShowDetail(true)}>
+        <h4 onMouseOver={e => setShowDetail(true)} 
+            onClick={e => setShowDetail(true)}>
             자세히 보기
         </h4>
         {showDetail ? (
-                <p onMouseLeave={() => setShowDetail(false)}>
+                <p onMouseLeave={() => setShowDetail(false)}
+                   onClick={() => setShowDetail(false)}
+                >
                     {props.content.split('\\n').map((line, index) => (
                         <React.Fragment key={index}>
                             {line}

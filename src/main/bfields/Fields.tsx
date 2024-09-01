@@ -16,10 +16,10 @@ const Fields: React.FC = () => {
         </FieldCard>
         <FieldCard 
           header='심리 검사' 
-          content='- 성격검사 10만 (HTP + SCT + 해석상담 50분)
-        - 정서 및 정신건강 검사 20만 (MMPI-2 또는 MMPI-A + TCI + 해석상담 80분)
-        - 기질 및 성격검사 10만 (TCI + SCT + 해석상담 50분)
-        - 대인관계 검사 12만 (TAT + HTP + 해석상담 60분)
+          content='- 성격검사 10만 (HTP + SCT + 해석상담 50분) \n
+        - 정서 및 정신건강 검사 20만 (MMPI-2 또는 MMPI-A + TCI + 해석상담 80분) \n
+        - 기질 및 성격검사 10만 (TCI + SCT + 해석상담 50분) \n
+        - 대인관계 검사 12만 (TAT + HTP + 해석상담 60분) \n
         - 나를 이해하는 검사 20만 (MMPI-2 + TCI + SCT + 해석상담 80분)'>
         </FieldCard>
         </div>

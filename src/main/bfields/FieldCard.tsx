@@ -1,6 +1,7 @@
 import sample from './pic/abc.jpg';
 import './FieldCard.css';
 import { useState } from 'react';
+import React from 'react';
 
 interface FieldCardProp {
     header: string,
@@ -17,7 +18,16 @@ const FieldCard: React.FC<FieldCardProp> = (props:FieldCardProp) => {
         <h4 onMouseOver={e => setShowDetail(true)}>
             자세히 보기
         </h4>
-        {showDetail ? <p onMouseLeave={e => setShowDetail(false)}>{props.content}</p> : null}
+        {showDetail ? (
+                <p onMouseLeave={() => setShowDetail(false)}>
+                    {props.content.split('\\n').map((line, index) => (
+                        <React.Fragment key={index}>
+                            {line}
+                            <br />
+                        </React.Fragment>
+                    ))}
+                </p>
+            ) : null}
     </div>;
 }
 

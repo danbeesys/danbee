@@ -10,6 +10,7 @@ import Navigation from "./common/Navigation";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import ImageIntroduce from './ainrto_pic/ImageIntroduce';
+import FixedRightNav from './right_nav/FixedRightNav';
 
 const MainView: React.FC = () => {
     const location = useLocation();
@@ -33,6 +34,7 @@ const MainView: React.FC = () => {
             <MapSection />
         </main>
         <Footer />
+        <FixedRightNav />
     </div>
 }
 

@@ -1,24 +1,19 @@
 import './FixedRightNav.css';
 import { Fab } from '@mui/material';
-import NavigationIcon from '@mui/icons-material/Navigation';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import MessageIcon from '@mui/icons-material/Message';
 import React from 'react';
-
-interface NavItem {
-  id: string;
-  label: string;
-  href: string;
-}
-
-interface FixedRightNavProps {
-  items: NavItem[];
-}
 
 const FixedRightNav: React.FC = () => {
   return (
     <nav className="fix_nav">
-        <Fab variant="extended" size="small" color="primary">
-            <NavigationIcon sx={{ mr: 1 }} />
-            Extended
+        <Fab variant="extended" size="small" color="primary" sx={{width:150, mt:1, mb:1}} href='tel:PHONE'>
+            <LocalPhoneIcon sx={{ mr: 1 }} />
+            031-714-1714
+        </Fab>
+        <Fab variant="extended" size="small" color="primary" sx={{width:150, mt:1, mb:1}}>
+            <MessageIcon sx={{ mr: 1 }} />
+            abcdefg
         </Fab>
     </nav>
   );

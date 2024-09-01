@@ -1,5 +1,5 @@
 import Navigation from "../../common/Navigation";
-import DiagnosisPaperSupplier from "../DiagnosisPaperSupplier";
+import DiagnosisPaperSupplier from "./ParentDiagnosisMarker";
 
 const questions: string[] = [
     "question1", "question2"

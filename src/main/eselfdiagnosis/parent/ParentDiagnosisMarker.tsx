@@ -12,7 +12,7 @@ export interface DiagnosisPaperProps {
     questions: string[];
 }
 
-const DiagnosisPaperSupplier: React.FC<DiagnosisPaperProps> = ({ questions }) => {
+const ParentDiagnosisMarker: React.FC<DiagnosisPaperProps> = ({ questions }) => {
     const [scoreMap, setScoreMap] = useState(new Map<string, number>());
     const [couldConfirm, setCouldConfirm] = useState(true);
     const navigate = useNavigate();
@@ -87,4 +87,4 @@ const DiagnosisPaperSupplier: React.FC<DiagnosisPaperProps> = ({ questions }) =>
         </form>;
 }
 
-export default DiagnosisPaperSupplier;
+export default ParentDiagnosisMarker;

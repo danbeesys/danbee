@@ -1,5 +1,5 @@
 import Navigation from "../../common/Navigation";
-import DiagnosisPaperSupplier from "./ParentDiagnosisMarker";
+import ParentDiagnosisMarker from "./ParentDiagnosisMarker";
 
 const questions: string[] = [
     "question1", "question2"
@@ -8,7 +8,7 @@ const questions: string[] = [
 const ParentDiagnosis: React.FC = () => {
     return <div>
         <Navigation />
-        <DiagnosisPaperSupplier questions={questions} />
+        <ParentDiagnosisMarker questions={questions} />
     </div>;
 }
 

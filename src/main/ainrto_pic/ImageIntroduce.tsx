@@ -7,7 +7,7 @@ import photo5 from './pic/20240619_외부간판.jpg';
 import photo6 from './pic/20240710_172726.jpg';
 import photo7 from './pic/20240710_185942.jpg';
 import photo8 from './pic/20240716_사무실.jpg';
-import React, { useState } from "react";
+import React from "react";
 import ImageGallery from "react-image-gallery";
 
 interface item {
@@ -21,7 +21,9 @@ interface item {
 }
 
 const ImageIntroduce: React.FC = () => {
-  return <ImageGallery items={itemData} showFullscreenButton={false} showPlayButton={false} showNav={false} />
+  return <div>
+    <ImageGallery items={itemData} showFullscreenButton={false} showPlayButton={false} showNav={false} />
+    </div>
 }
 
 export default ImageIntroduce;

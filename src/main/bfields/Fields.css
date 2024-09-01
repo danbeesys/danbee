@@ -1,3 +1,11 @@
 .fields-body {
     padding: 10vh 10vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.fields-body h2 {
+    width: 20%;
+    height: 100%;
 }

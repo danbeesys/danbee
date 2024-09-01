@@ -1,3 +1,5 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 .image_box {
     max-height: 80%;
     max-width: 100%;

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/danbee/static/css/main.26277c3b.css",
-    "main.js": "/danbee/static/js/main.1d861b85.js",
+    "main.css": "/danbee/static/css/main.e7cc25f8.css",
+    "main.js": "/danbee/static/js/main.a40369f0.js",
     "static/js/453.fb9f992d.chunk.js": "/danbee/static/js/453.fb9f992d.chunk.js",
     "static/media/20240710_133854.jpg": "/danbee/static/media/20240710_133854.7d73544cb58bfc8642c4.jpg",
     "static/media/20240610_메뉴간판.jpg": "/danbee/static/media/20240610_메뉴간판.7f7ca17bc5f24d37635a.jpg",
@@ -16,17 +16,16 @@
     "static/media/20240716_사무실.jpg": "/danbee/static/media/20240716_사무실.f174eab5a69c72e8f8cc.jpg",
     "static/media/face.jpg": "/danbee/static/media/face.7d25a61d10b4728b4efc.jpg",
     "static/media/20240619_외부간판.jpg": "/danbee/static/media/20240619_외부간판.c044a18e9ee0fcb3f0e6.jpg",
-    "static/media/book_pic.jpg": "/danbee/static/media/book_pic.82fabb5e275eb99823ed.jpg",
     "static/media/logo.png": "/danbee/static/media/logo.01689f9dd48d13018d11.png",
     "static/media/abc.webp": "/danbee/static/media/abc.2fbb6f9fbcd57bc179a8.webp",
     "static/media/map.PNG": "/danbee/static/media/map.e390461a1985330f9fd4.PNG",
     "index.html": "/danbee/index.html",
-    "main.26277c3b.css.map": "/danbee/static/css/main.26277c3b.css.map",
-    "main.1d861b85.js.map": "/danbee/static/js/main.1d861b85.js.map",
+    "main.e7cc25f8.css.map": "/danbee/static/css/main.e7cc25f8.css.map",
+    "main.a40369f0.js.map": "/danbee/static/js/main.a40369f0.js.map",
     "453.fb9f992d.chunk.js.map": "/danbee/static/js/453.fb9f992d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26277c3b.css",
-    "static/js/main.1d861b85.js"
+    "static/css/main.e7cc25f8.css",
+    "static/js/main.a40369f0.js"
   ]
 }

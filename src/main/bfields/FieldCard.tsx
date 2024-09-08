@@ -14,7 +14,7 @@ const FieldCard: React.FC<FieldCardProp> = (props:FieldCardProp) => {
     return <div className='field_card'>
         <img src={sample} className='field_card_pic'>
         </img>
-        <h2>{props.header}</h2>
+        <h3>{props.header}</h3>
         <h4 onMouseOver={e => setShowDetail(true)} 
             onClick={e => setShowDetail(true)}>
             자세히 보기

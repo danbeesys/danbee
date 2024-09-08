@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Single+Day&display=swap');
+
 .fields-body {
     padding: 10vh 10vw;
     width: 100vw;
@@ -6,6 +8,10 @@
 }
 
 .fields-body h2 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
     width: 20%;
     height: 100%;
 }

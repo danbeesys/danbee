@@ -1,19 +1,22 @@
 /* Header styles */
-.App-header {
+.banner-header {
     position: relative;
     align-self: center;
     height: 70vh;
     padding-top: 15vh;
     overflow: hidden;
+    display: flex;
+    color: white;
+    text-align: center;
   }
   
-.App-header-left {
+.banner-header-left {
   width: 20vw;
   height: 70vh;
   background-color: #201D1E;
 }
 
-.App-header-left p {
+.banner-header-left p {
   align-self: last baseline;
   padding-top: 60vh;
 }

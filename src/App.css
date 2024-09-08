@@ -40,8 +40,6 @@ body {
 .App-header {
   background-size: cover;
   background-position: center;
-  height: 70vh;
-  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;

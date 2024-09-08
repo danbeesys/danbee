@@ -6,9 +6,9 @@ import Footer from "../main/common/Footer";
 const Banner: React.FC = () => {
     return (
       <div>
-        <div className="App-header">
+        <div className="banner-header">
           <Navigation />
-          <div className='App-header-left'>
+          <div className='banner-header-left'>
             <p>
               빠른상담문의<br/>
               031.714.1714<br/>

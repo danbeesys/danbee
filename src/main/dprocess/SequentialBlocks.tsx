@@ -1,34 +1,37 @@
 // SequentialBlocks.tsx
 import React from 'react';
 import styles from './SequentialBlock.module.css';
-
-export interface Block {
-  id: number;
-  content: string;
-}
+import BlockComponent, { Block } from './BlockComponent';
 
 interface SequentialBlocksProps {
   blocks: Block[];
 }
 
 const SequentialBlocks: React.FC<SequentialBlocksProps> = ({ blocks }) => {
+  const firstLinePos: number = 3;
+  const firstLineBlock: Block[] = blocks.slice(0, firstLinePos);
+  const secondLineBlock: Block[] = blocks.slice(firstLinePos);
+
   return (
-    <div className={styles.sequentialBlocks}>
-      {blocks.map((block, index) => (
+    <div>
+      <div className={styles.sequentialBlocks}>
+      {firstLineBlock.map((block, index) => (
         <React.Fragment key={block.id}>
-          <div className={styles.block}>
-            {block.content.split('\n').map((line, i) => (
-              <React.Fragment key={i}>
-                {line}
-                {i < block.content.split('\n').length - 1 && <br />}
-              </React.Fragment>
-            ))}
-          </div>
-          {index < blocks.length - 1 && (
+          <BlockComponent id={block.id} thumbnail={block.thumbnail} content={block.content} />
+          <div className={styles.arrow} aria-hidden="true">➔</div>
+        </React.Fragment>
+      ))}
+      </div>
+      <div className={styles.sequentialBlocks}>
+      {secondLineBlock.map((block, index) => (
+        <React.Fragment key={block.id}>
+          <BlockComponent id={block.id} thumbnail={block.thumbnail} content={block.content} />
+          {index < secondLineBlock.length - 1 && (
             <div className={styles.arrow} aria-hidden="true">➔</div>
           )}
         </React.Fragment>
       ))}
+      </div>
     </div>
   );
 };

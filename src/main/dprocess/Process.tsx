@@ -1,16 +1,23 @@
 import './Process.css'
 import Footer from "../common/Footer";
 import Navigation from "../common/Navigation";
-import SequentialBlocks, { Block } from "./SequentialBlocks";
+import SequentialBlocks from "./SequentialBlocks";
+import phonePic from './pic/telephone.png';
+import visitPic from './pic/visit.png';
+import discussionPic from './pic/discussion.png';
+import searchPic from './pic/search.png';
+import presentPic from './pic/presentation.png';
+import cure from './pic/value.png';
+import { Block } from './BlockComponent';
 
 const Process: React.FC = () => {
     const processBlock: Block[] = [];
-    processBlock.push({id: 1, content: "상담예약\n전화 예약\n온라인 예약"});
-    processBlock.push({id: 2, content: "연구소 방문\n예약시간 10분전 방문"});
-    processBlock.push({id: 3, content: "초기상담\n향후 치료방향\n검사필요여부 결정"});
-    processBlock.push({id: 4, content: "심리검사\n대상자에 한하여 실시"});
-    processBlock.push({id: 5, content: "진단평가\n검사해석"});
-    processBlock.push({id: 6, content: "치료 프로그램\n진행"});
+    processBlock.push({id: 1, thumbnail: phonePic, content: "상담예약\n전화 예약\n온라인 예약"});
+    processBlock.push({id: 2, thumbnail: visitPic, content: "연구소 방문\n예약시간 10분전 방문"});
+    processBlock.push({id: 3, thumbnail: discussionPic, content: "초기상담\n향후 치료방향\n검사필요여부 결정"});
+    processBlock.push({id: 4, thumbnail: searchPic, content: "심리검사\n대상자에 한하여 실시"});
+    processBlock.push({id: 5, thumbnail: presentPic, content: "진단평가\n검사해석"});
+    processBlock.push({id: 6, thumbnail: cure, content: "치료 프로그램\n진행"});
 
 
     /**

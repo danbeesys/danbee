@@ -9,8 +9,8 @@ import Footer from "./common/Footer";
 import Navigation from "./common/Navigation";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import ImageIntroduce from './ainrto_pic/ImageIntroduce';
 import FixedRightNav from './right_nav/FixedRightNav';
+import ShowPhotos from './counselPhoto/ShowPhotos';
 
 const MainView: React.FC = () => {
     const location = useLocation();
@@ -26,7 +26,7 @@ const MainView: React.FC = () => {
         <Navigation />
         <main className="main_css">
             <Introduce />
-            <ImageIntroduce />
+            <ShowPhotos />
             <Fields />
             <Program />
             <Process />

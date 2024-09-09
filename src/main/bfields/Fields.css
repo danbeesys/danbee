@@ -2,7 +2,7 @@
 
 .fields-body {
     padding: 10vh 10vw;
-    width: 100vw;
+    width: 75vw;
     height: 100vh;
     display: flex;
 }
@@ -12,6 +12,6 @@
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    width: 20%;
+    width: 30%;
     height: 100%;
 }

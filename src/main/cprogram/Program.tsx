@@ -11,7 +11,10 @@ const Program: React.FC = () => {
     return (
     <section id="program">
         <div className='program-body'>
+          <div className='program-body-left'>
             <h2>Special 프로그램</h2>
+          </div>
+          <div className='program-body-right'>
             <Accordion>
               <AccordionSummary
                 expandIcon={<ArrowDropDownIcon />}
@@ -61,6 +64,7 @@ const Program: React.FC = () => {
                 </Typography>
               </AccordionDetails>
             </Accordion>
+          </div>
         </div>
     </section>
 )

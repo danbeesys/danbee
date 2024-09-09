@@ -1,4 +1,4 @@
-import map from "../pic/map.PNG";
+import map from "./pic/map.png";
 import './MapSection.css';
 
 const MapSection: React.FC = () => {
@@ -8,11 +8,10 @@ const MapSection: React.FC = () => {
           <img src={map}/>
         </div>
         <div className="map-info">
-          <h2>오시는 길</h2>
-          <p>경기 성남시 분당구 서현동 89</p>
-          <h2>영업시간</h2>
-          <p>평일 : 오전 10시 ~ 오후 7시<br/>(평일 2일은 야간 상담 진행. 오후 9시까지)</p>
-          <p>토요일 : 오전 10시 ~ 오후 5시</p>
+          <h2>주소</h2>
+          <p>경기 성남시 분당구 서현동 89 서현파크 프라자</p>
+          <h2>오시는길</h2>
+          <p>서현역 하차 - AK플라자 2층 - 서현역 고가차도 좌측 건넘 - 서현파크 프라자 </p>
         </div>
       </section>
     );

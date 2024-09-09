@@ -45,9 +45,6 @@ const Process: React.FC = () => {
                     <td>{"휴무"}</td>
                 </tr>
             </tbody>
-            <h4>상담 방법</h4>
-            <p>대면상담 또는 화상상담(ZOOM) 실시</p>
-            <p>상담신청서</p>
         </section>
 )
 };

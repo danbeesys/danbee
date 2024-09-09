@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Noto+Sans+KR:wght@100..900&family=Single+Day&display=swap');
+
 .block {
     flex: 1;
     background-color: #F5F5F5;
+    font-family: "Noto Sans KR", system-ui;
     color: var(--text-color);
     padding: 20px 15px;
     border-radius: 12px;
@@ -21,6 +24,7 @@
   }
   
   .thumbnail {
+    position: absolute;
     height: 50px;
     width: 50px;
     align-self: self-start;

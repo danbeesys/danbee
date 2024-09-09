@@ -38,6 +38,10 @@
   flex: 1;
 }
 
+.doctor-info h2 {
+  margin: 0 0;
+}
+
 .doctor-info h3 {
   font-family: 'Arita-buri';
 }

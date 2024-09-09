@@ -31,7 +31,9 @@
     position: relative;
     z-index: 2;
     text-align: center;
-    color: #0f2f42;
+    color: #edffff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(61, 61, 61);
     margin: 0 0;
 }
 

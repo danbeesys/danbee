@@ -9,7 +9,7 @@
 
 .arrow {
   font-size: 24px;
-  color: var(--secondary-color);
+  color: black;
   margin: 0 5px; /* 좌우 마진을 조금 줄임 */
   flex-shrink: 0;
 }

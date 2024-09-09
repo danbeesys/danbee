@@ -1,10 +1,10 @@
-import sample from './pic/abc.webp';
 import './FieldCard.css';
 import { useState } from 'react';
 import React from 'react';
 
 interface FieldCardProp {
     header: string,
+    image: string,
     content: string,
     children?: React.ReactNode,
 }
@@ -12,7 +12,7 @@ interface FieldCardProp {
 const FieldCard: React.FC<FieldCardProp> = (props:FieldCardProp) => {
     const [showDetail, setShowDetail] = useState(false);
     return <div className='field_card'>
-        <img src={sample} className='field_card_pic'>
+        <img src={props.image} className='field_card_pic'>
         </img>
         <h3>{props.header}</h3>
         <h4 onMouseOver={e => setShowDetail(true)} 

@@ -8,6 +8,8 @@ import MainView from './main/MainView';
 import SelfDiagnosis from './main/eselfdiagnosis/SelfDiagnosis';
 import ParentDiagnosis from './main/eselfdiagnosis/parent/ParentDiagnosis';
 import ParentDiagnosisResult from './main/eselfdiagnosis/parent/ParentDiagnosisResult';
+import SmartPhoneDiagnosis from './main/eselfdiagnosis/smartphone/SmartPhoneDiagnosis';
+import SmartPhoneDiagnosisResult from './main/eselfdiagnosis/smartphone/SmartPhoneDiagnosisResult';
 
 const App: React.FC = () => {
   return (
@@ -17,6 +19,8 @@ const App: React.FC = () => {
         <Route path ="/danbee" element={<Banner />}></Route>
         <Route path ="/danbee/main" element={<MainView />}></Route>
         <Route path ="/danbee/diagnosis" element={<SelfDiagnosis />}></Route>
+        <Route path ="/danbee/diagnosis/smartphone" element={<SmartPhoneDiagnosis />}></Route>
+        <Route path ="/danbee/diagnosis/smartphone/result" element={<SmartPhoneDiagnosisResult />}></Route>
         <Route path ="/danbee/diagnosis/parent" element={<ParentDiagnosis />}></Route>
         <Route path ="/danbee/diagnosis/parent/result" element={<ParentDiagnosisResult />}></Route>
         <Route path ="*" element={<NotFound />}></Route>

@@ -1,4 +1,3 @@
-import './DiagnosisPaperSupplier.css';
 import FormControl from "@mui/material/FormControl";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormLabel from "@mui/material/FormLabel";
@@ -8,11 +7,11 @@ import React, { useState } from "react";
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 
-export interface DiagnosisPaperProps {
+export interface SmartPhoneDiagnosisProps {
     questions: string[];
 }
 
-const DiagnosisPaperSupplier: React.FC<DiagnosisPaperProps> = ({ questions }) => {
+const SmartPhoneDiagnosisMarker: React.FC<SmartPhoneDiagnosisProps> = ({ questions }) => {
     const [scoreMap, setScoreMap] = useState(new Map<string, number>());
     const [couldConfirm, setCouldConfirm] = useState(true);
     const navigate = useNavigate();
@@ -28,7 +27,7 @@ const DiagnosisPaperSupplier: React.FC<DiagnosisPaperProps> = ({ questions }) =>
         for (const e of scoreMap.values()) {
             total = total + e;
         }
-        navigate('/danbee/diagnosis/parent/result', { state: {result: total / scoreMap.size}});
+        navigate('/danbee/diagnosis/smartphone/result', { state: {result: total / scoreMap.size}});
     };
 
     return <form onSubmit={handleSubmit} className='supplier_body'>
@@ -81,4 +80,4 @@ const DiagnosisPaperSupplier: React.FC<DiagnosisPaperProps> = ({ questions }) =>
         </form>;
 }
 
-export default DiagnosisPaperSupplier;
+export default SmartPhoneDiagnosisMarker;

@@ -32,7 +32,7 @@
     z-index: 2;
     text-align: center;
     color: #edffff;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.01px;
     -webkit-text-stroke-color: rgb(61, 61, 61);
     margin: 0 0;
 }

@@ -46,6 +46,15 @@
   font-family: 'Arita-buri';
 }
 
+.doctor-info p {
+  font-family: 'Pretendard';
+  font-size: 1em;
+}
+
+.doctor-info p b {
+  color: var(--secondary-color)
+}
+
 .doctor-info button {
   background-color: var(--accent-color);
   color: white;

@@ -12,7 +12,7 @@ const Banner: React.FC = () => {
             <p>
               빠른상담문의<br/>
               031.714.1714<br/>
-              010.3316.6371
+              010.2493.1714
             </p>
           </div>
           <ImageSlider />

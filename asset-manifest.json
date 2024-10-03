@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/danbee/static/css/main.0f8733d4.css",
-    "main.js": "/danbee/static/js/main.60b0bf40.js",
+    "main.css": "/danbee/static/css/main.ebd3ac7a.css",
+    "main.js": "/danbee/static/js/main.31ca025f.js",
     "static/js/453.fb9f992d.chunk.js": "/danbee/static/js/453.fb9f992d.chunk.js",
     "static/media/20240710_133854.jpg": "/danbee/static/media/20240710_133854.7d73544cb58bfc8642c4.jpg",
     "static/media/20240610_메뉴간판.jpg": "/danbee/static/media/20240610_메뉴간판.7f7ca17bc5f24d37635a.jpg",
@@ -27,12 +27,12 @@
     "static/media/visit.png": "/danbee/static/media/visit.22731a3970ff6fdfa0ff.png",
     "static/media/presentation.png": "/danbee/static/media/presentation.16d1b3017e5b7cc26a1e.png",
     "index.html": "/danbee/index.html",
-    "main.0f8733d4.css.map": "/danbee/static/css/main.0f8733d4.css.map",
-    "main.60b0bf40.js.map": "/danbee/static/js/main.60b0bf40.js.map",
+    "main.ebd3ac7a.css.map": "/danbee/static/css/main.ebd3ac7a.css.map",
+    "main.31ca025f.js.map": "/danbee/static/js/main.31ca025f.js.map",
     "453.fb9f992d.chunk.js.map": "/danbee/static/js/453.fb9f992d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f8733d4.css",
-    "static/js/main.60b0bf40.js"
+    "static/css/main.ebd3ac7a.css",
+    "static/js/main.31ca025f.js"
   ]
 }

@@ -13,9 +13,9 @@ const FixedRightNav: React.FC = () => {
             <LocalPhoneIcon sx={{ mr: 1 }} />
             031-714-1714
         </Fab>
-        <Fab variant="extended" size="small" color="primary" sx={{width:150, mt:1, mb:1}}>
+        <Fab variant="extended" size="small" color="primary" sx={{width:150, mt:1, mb:1}} href='https://open.kakao.com/o/syUYt8Qg'>
             <MessageIcon sx={{ mr: 1 }} />
-            abcdefg
+            오픈 채팅
         </Fab>
         <Fab variant="extended" size="small" color="primary" sx={{width:150, height:50, mt:1, mb:1}}>
             <AssignmentIndIcon sx={{ mr: 1 }} />
@@ -23,7 +23,7 @@ const FixedRightNav: React.FC = () => {
         </Fab>
         <Fab variant="extended" size="small" color="primary" sx={{width:150, mt:1, mb:1}}>
             <ContentPasteIcon sx={{ mr: 1 }} />
-            상담 신청서
+            상담 신청
         </Fab>
     </nav>
   );

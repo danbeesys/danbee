@@ -1,0 +1,9 @@
+.therapy_content_viewer {
+    display: flex;
+}
+
+.therapy_content_viewer img{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}

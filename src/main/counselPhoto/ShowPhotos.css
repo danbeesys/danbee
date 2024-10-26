@@ -1,14 +1,15 @@
 .image_introduce {
+    padding: 10vh 8vw;
     display: flex;
 }
 
 .image_introduce_left {
-    width: 80%;
+    width: 70%;
     height: 100%;
 }
 
 .image_introduce_right {
-    width: 20%;
+    width: 30%;
     height: 100%;
     margin: 5% 0;
 }

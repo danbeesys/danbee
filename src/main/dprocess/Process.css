@@ -2,34 +2,28 @@
     padding: 10vh 10vw;
 }
 
-.process-body tbody tr {
+.process_table tr {
     color:#666B85;
-    background:#ffffff;
-    font-size:16px;
-    font-weight: 100;
-    padding:24px;
-    text-align:left;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    vertical-align:middle;
+    justify-self: unset;
 }
 
-.process-body tbody tr th {
+.process_table tr th {
+    width: 30vw;
     color:#666B85;
     background:#ffffff;
-    font-size:16px;
+    font-size:1.3rem;
     font-weight: 100;
     padding:24px;
     text-align:left;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     vertical-align:middle;
     border-bottom:1px solid #d3d3d3;
-    border-right: 1px solid #d8dbe0;
 }
 
-.process-body tbody tr td {
+.process_table tr td {
+    width: 70vw;
     color:#666B85;
-    background:#ffffff;
-    font-size:16px;
+    font-size:1.3rem;
     font-weight: 100;
     padding:24px;
     text-align:left;

@@ -1,6 +1,4 @@
 import './Process.css'
-import Footer from "../common/Footer";
-import Navigation from "../common/Navigation";
 import SequentialBlocks from "./SequentialBlocks";
 import phonePic from './pic/telephone.png';
 import visitPic from './pic/visit.png';
@@ -31,7 +29,7 @@ const Process: React.FC = () => {
             <h2>상담절차</h2>
             <SequentialBlocks blocks={processBlock}></SequentialBlocks>
             <h3>상담 운영시간</h3>
-            <tbody>
+            <tbody className='process_table'>
                 <tr>
                     <th>{"평일"}</th>
                     <td>{"오전 10시 ~ 오후 7시 \n (평일 2일은 야간 상담 진행. 오후 9시까지)"}</td>

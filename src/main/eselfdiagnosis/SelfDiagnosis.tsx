@@ -3,10 +3,11 @@ import Footer from "../common/Footer";
 import Navigation from "../common/Navigation";
 import BoxSlider from '../common/BoxSlider';
 import activity from "../pic/20240610_125241.jpg";
+import smartPhoneImg from "./smartphone/pic/overUser.jpg";
 import DiagnosisExplanation, { DiagnosisExplanationContent } from './DiagnosisExplanation';
 
 const personal: DiagnosisExplanationContent[] = [
-    { image: activity, header: "스마트폰 과다 사용 자가 진단", link: "/danbee/diagnosis/smartphone" },
+    { image: smartPhoneImg, header: "스마트폰 과다 사용 자가 진단", link: "/danbee/diagnosis/smartphone" },
     { image: activity, header: "부모양육태도 검사", link: "/danbee/diagnosis/parent" },
   ];
 

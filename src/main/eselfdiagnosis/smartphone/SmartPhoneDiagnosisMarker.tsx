@@ -34,9 +34,14 @@ const SmartPhoneDiagnosisMarker: React.FC<SmartPhoneDiagnosisProps> = ({ questio
         <FormControl>
             {questions.map((question, index) => (
                 <React.Fragment key={index}>
-                    <FormLabel id={`question-${index}`} sx={{
-                        fontSize: '45px',
-                        padding: '10px'
+                    <FormLabel 
+                    id={`question-${index}`} 
+                    focused={false}
+                    sx={{
+                        fontSize: '25px',
+                        paddingTop: '30px',
+                        paddingBottom: '10px',
+                        alignSelf: 'center',
                     }}>{question}</FormLabel>
                     <RadioGroup
                         row
@@ -44,6 +49,10 @@ const SmartPhoneDiagnosisMarker: React.FC<SmartPhoneDiagnosisProps> = ({ questio
                         name={`question-radio-group-${index}`}
                         defaultValue="top"
                         onChange={handleOnChange}
+                        sx={{
+                            alignSelf: 'center',
+                            paddingBottom: '30px'
+                        }}
                     >
                         <FormControlLabel
                             value="1"
@@ -72,7 +81,7 @@ const SmartPhoneDiagnosisMarker: React.FC<SmartPhoneDiagnosisProps> = ({ questio
                     </RadioGroup>
                 </React.Fragment>
             ))}
-        <Button sx={{ mt: 1, mr: 1 }} type="submit" variant="outlined" 
+        <Button sx={{ mt: 1, mr: 1, marginBottom: '30px' }} type="submit" variant="outlined" 
                 disabled={couldConfirm}>
           결과 확인
         </Button>

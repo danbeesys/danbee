@@ -64,6 +64,31 @@ const Program: React.FC = () => {
                 </Typography>
               </AccordionDetails>
             </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ArrowDropDownIcon />}
+                aria-controls="panel3-content"
+                id="panel3-header"
+              >
+                <Typography sx={{
+                      color: 'success.dark',
+                      display: 'inline',
+                      fontWeight: 'bold',
+                      mx: 0.5,
+                      fontSize: 14,
+                    }}>놀이 치료</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography sx={{
+                  fontWeight: 'fontWeightLight'
+                }}>
+                <p>놀이치료는 아동이 놀이를 하며 무의식으로 갈등을 표현하게 하고,</p>
+                <p>스스로 선택한 놀이에서 창조적인 방법으로 문제 해결을 할 수 있게 도와줍니다.</p>
+                <p>그리고 치료사와 놀이를 매개로 자유롭게 의사소통을 하고, 억압된 감정을 해소하며, 감정을 정화합니다.</p>
+                <p>인형, 게임, 찰흙, 미술재료, 손인형 등의 도구를 사용합니다.</p>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
           </div>
         </div>
     </section>

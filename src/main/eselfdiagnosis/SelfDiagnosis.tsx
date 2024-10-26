@@ -8,7 +8,7 @@ import DiagnosisExplanation, { DiagnosisExplanationContent } from './DiagnosisEx
 
 const personal: DiagnosisExplanationContent[] = [
     { image: smartPhoneImg, header: "스마트폰 과다 사용 자가 진단", link: "/danbee/diagnosis/smartphone" },
-    { image: activity, header: "부모양육태도 검사", link: "/danbee/diagnosis/parent" },
+    //{ image: activity, header: "부모양육태도 검사", link: "/danbee/diagnosis/parent" },
   ];
 
 const SelfDiagnosis: React.FC = () => {

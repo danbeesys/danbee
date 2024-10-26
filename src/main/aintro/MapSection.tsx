@@ -1,4 +1,5 @@
 import map from "./pic/map.png";
+import navermap from "./pic/navermap.jpg";
 import './MapSection.css';
 
 const MapSection: React.FC = () => {
@@ -8,7 +9,12 @@ const MapSection: React.FC = () => {
           <img src={map}/>
         </div>
         <div className="map-info">
+          <div className="map_info_title">
           <h2>주소</h2>
+          <a href="https://naver.me/5Eaw2cd3" target='_blank'>
+            <img src={navermap}/>
+          </a>
+          </div>
           <p>경기 성남시 분당구 서현동 89 서현파크 프라자 313호</p>
           <h2>오시는길</h2>
           <p>서현역 하차 - AK플라자 2층 - 서현역 고가차도 좌측 건넘 - 서현파크 프라자</p>

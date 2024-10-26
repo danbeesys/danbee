@@ -15,6 +15,16 @@
   color: var(--secondary-color);
 }
 
+.map_info_title {
+  display: flex;
+}
+
+.map_info_title img{
+  padding: 2vw 0;
+  width: 3vw;
+  height: 3vw;
+}
+
 .map-info h2 {
   font-size: 2em;
 }

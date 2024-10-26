@@ -1,5 +1,7 @@
 import { useState } from "react";
 import TherapyContent from "./TherapyContentViewer";
+import style from "./Therapy.module.css";
+
 
 const Therapy:  React.FC = () => {
     const [therapyMode, setTherapyMode] = useState(false);
@@ -9,7 +11,10 @@ const Therapy:  React.FC = () => {
     }
     
     return <div>
-        <h3 onClick={onClickTherapy}>그림책 테라피 목록</h3>
+        <h3 
+        className={style.therapy_cursor_pointer}
+        onClick={onClickTherapy}>
+          그림책 테라피 목록</h3>
         {therapyMode ? <TherapyContent/> : null}
     </div>
 }

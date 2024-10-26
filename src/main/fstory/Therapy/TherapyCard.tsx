@@ -55,10 +55,10 @@ const TherapyCard: React.FC<TherapyContent> = (props) => {
     };
 
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, margin: 1 }}>
             <CardMedia
                 component="img"
-                height="194"
+                height="500"
                 image={props.imagePath}
                 alt={props.title}
             />

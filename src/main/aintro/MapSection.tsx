@@ -1,13 +1,15 @@
 import map from "./pic/map.png";
 import navermap from "./pic/navermap.jpg";
 import './MapSection.css';
+import { isMobile } from "react-device-detect";
 
 const MapSection: React.FC = () => {
     return (
       <section id="visit" className="map-section">
+        {isMobile ? null :
         <div className="map">
           <img src={map}/>
-        </div>
+        </div>}
         <div className="map-info">
           <div className="map_info_title">
           <h2>주소</h2>

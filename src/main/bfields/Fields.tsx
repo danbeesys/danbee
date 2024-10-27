@@ -8,7 +8,7 @@ const Fields: React.FC = () => {
     return (
       <section id="fields" className='fields-body'>
         <h2>상담 분야</h2>
-        <div>
+        <div className='field-card-container'>
         <FieldCard
           header='개인 상담' 
           image={singleImg}

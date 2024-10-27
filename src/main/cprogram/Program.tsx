@@ -1,12 +1,6 @@
 import './Program.css';
 import book from "./book_pic.jpg";
 import * as React from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import { Height } from '@mui/icons-material';
 
 const Program: React.FC = () => {
     return (

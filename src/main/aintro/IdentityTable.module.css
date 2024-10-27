@@ -35,3 +35,15 @@ td {
 a {
     color: #73685d;
 }
+
+@media screen and (max-width: 768px) {
+    th {
+        width: 1vw;
+        text-wrap: wrap;
+        text-align: center;
+        background: #f3e3d3;
+    }
+    table {
+        width: 80vw;
+    }
+}

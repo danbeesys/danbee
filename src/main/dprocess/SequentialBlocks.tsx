@@ -17,7 +17,9 @@ const SequentialBlocks: React.FC<SequentialBlocksProps> = ({ blocks }) => {
       <div className={styles.sequentialBlocks}>
       {firstLineBlock.map((block, index) => (
         <React.Fragment key={block.id}>
+          <div className={styles.block}>
           <BlockComponent id={block.id} thumbnail={block.thumbnail} content={block.content} />
+          </div>
           <div className={styles.arrow} aria-hidden="true">➔</div>
         </React.Fragment>
       ))}
@@ -25,7 +27,9 @@ const SequentialBlocks: React.FC<SequentialBlocksProps> = ({ blocks }) => {
       <div className={styles.sequentialBlocks}>
       {secondLineBlock.map((block, index) => (
         <React.Fragment key={block.id}>
+          <div className={styles.block}>
           <BlockComponent id={block.id} thumbnail={block.thumbnail} content={block.content} />
+          </div>
           {index < secondLineBlock.length - 1 && (
             <div className={styles.arrow} aria-hidden="true">➔</div>
           )}

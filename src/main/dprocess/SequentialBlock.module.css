@@ -18,10 +18,12 @@
 @media (max-width: 768px) {
   .sequentialBlocks {
     flex-wrap: wrap; /* 작은 화면에서는 줄바꿈 허용 */
+    padding: 0;
+    margin: 0;
   }
   
   .block {
-    flex-basis: calc(50% - 20px); /* 2열로 표시 */
+    width: 100vw;
     margin: 10px;
   }
   

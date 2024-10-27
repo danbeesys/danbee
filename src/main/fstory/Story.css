@@ -1,3 +1,9 @@
 .story-body {
     padding: 10vh 10vw;
 }
+
+@media screen and (max-width: 768px) {
+    .story-body {
+        width: 100vw;
+    }
+}

@@ -27,7 +27,7 @@ const SmartPhoneDiagnosisMarker: React.FC<SmartPhoneDiagnosisProps> = ({ questio
         for (const e of scoreMap.values()) {
             total = total + e;
         }
-        navigate('/danbee/diagnosis/smartphone/result', { state: {result: total / scoreMap.size}});
+        navigate('/diagnosis/smartphone/result', { state: {result: total / scoreMap.size}});
     };
 
     return <form onSubmit={handleSubmit} className='supplier_body'>

@@ -29,3 +29,7 @@
     width: 50px;
     align-self: self-start;
   }
+
+  .content {
+    width: 20vw;
+  }

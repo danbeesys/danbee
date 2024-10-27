@@ -13,6 +13,7 @@
     height: 5vh;
     font-family: "Do Hyeon", sans-serif;
     font-size: 1.2vw;
+    height: fit-content;
   }
   
   .logo {
@@ -33,10 +34,20 @@
   .main-nav a {
     color: #484848;
     text-decoration: none;
+    font-size: 1.3rem;
     font-weight: 400;
     transition: color 0.3s ease;
   }
   
   .main-nav a:hover {
     color: var(--accent-color);
+  }
+
+  @media screen and (max-width: 768px) {
+    .main-nav {
+      padding: 0;
+    }
+    .main-nav li {
+      margin: 0 6vw;
+    }
   }

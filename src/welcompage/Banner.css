@@ -20,3 +20,10 @@
   align-self: last baseline;
   padding-top: 55vh;
 }
+
+
+@media screen and (max-width: 768px) {
+  .banner-header-left {
+    width: 0vw;
+  } 
+}

@@ -24,6 +24,6 @@
         width: fit-content;
     }
     .program-body-left, .program-body-right {
-        width: 100vw;
+        width: 80vw;
     }
 }

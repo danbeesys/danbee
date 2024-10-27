@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import Navigation from "../common/Navigation";
 import Profile from "./Profile";
 import IdentityTable from './IdentityTable';
-import MapSection from './MapSection';
-import Footer from '../common/Footer';
+import CloseIcon from '@mui/icons-material/Close';
 import './Introduce.css';
 
 const Introduce: React.FC = () => {
@@ -14,6 +12,13 @@ const Introduce: React.FC = () => {
         {showProfile && (
             <div className="popup-overlay" onClick={() => setShowProfile(false)}>
             <div className="popup" onClick={e => e.stopPropagation()}>
+              <CloseIcon 
+              onClick={() => setShowProfile(false)}
+              sx={{
+                position: 'absolute',
+                right: 60,
+                cursor: 'pointer'
+              }}/>
               <h2>이순희</h2>
               <h3>심리전문가</h3>
               <IdentityTable/>

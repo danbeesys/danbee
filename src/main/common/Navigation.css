@@ -10,14 +10,13 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    height: 5vh;
     font-family: "Do Hyeon", sans-serif;
     font-size: 1.2vw;
     height: fit-content;
   }
   
   .logo {
-    height: 80px;
+    height: 5vh;
   }
   
   .main-nav ul {

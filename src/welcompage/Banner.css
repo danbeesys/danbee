@@ -2,7 +2,7 @@
 .banner-header {
     position: relative;
     align-self: center;
-    height: 70vh;
+    height: fit-content;
     padding-top: 15vh;
     overflow: hidden;
     display: flex;
@@ -23,7 +23,12 @@
 
 
 @media screen and (max-width: 768px) {
+  .banner-header {
+    padding-top: 5vh;
+  }
+  
   .banner-header-left {
     width: 0vw;
+    height: 0vh;
   } 
 }

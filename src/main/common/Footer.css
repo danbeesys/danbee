@@ -2,6 +2,6 @@ footer {
     background-color: var(--card-color);
     color: rgb(5, 5, 5);
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     width: 100vw;
   }

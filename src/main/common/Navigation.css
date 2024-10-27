@@ -45,6 +45,7 @@
   @media screen and (max-width: 768px) {
     .main-nav {
       padding: 0;
+      width: 100vw;
     }
     .main-nav li {
       margin: 0 6vw;

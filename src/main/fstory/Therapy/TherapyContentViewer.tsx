@@ -50,11 +50,7 @@ const therapyContent: TherapyContent[] = [
 
 const TherapyContentViewer: React.FC = () => {
     return <Box sx={{ 
-      display: 'flex',
-      flexWrap: 'wrap',
-      gap: 1,
-      alignItems: 'flex-start',
-      justifyContent: 'space-between'
+      display: 'block',
     }}>
       {therapyContent.map((e, index) => (
         <TherapyCard key={index} title={e.title} date={e.date} imagePath={e.imagePath} description={e.description}/>))}

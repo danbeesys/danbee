@@ -1,14 +1,10 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
-import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import CardActionArea from '@mui/material/CardActionArea';
+import Box from '@mui/material/Box';
 
 
 export interface TherapyContent {
@@ -18,71 +14,30 @@ export interface TherapyContent {
     description: string[]
 }
 
-interface ExpandMoreProps extends IconButtonProps {
-    expand: boolean;
-}
-
-const ExpandMore = styled((props: ExpandMoreProps) => {
-    const { expand, ...other } = props;
-    return <IconButton {...other} />;
-})(({ theme }) => ({
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-        duration: theme.transitions.duration.shortest,
-    }),
-    variants: [
-        {
-            props: ({ expand }) => !expand,
-            style: {
-                transform: 'rotate(0deg)',
-            },
-        },
-        {
-            props: ({ expand }) => !!expand,
-            style: {
-                transform: 'rotate(180deg)',
-            },
-        },
-    ],
-}));
-
 const TherapyCard: React.FC<TherapyContent> = (props) => {
-
-    const [expanded, setExpanded] = React.useState(false);
-
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-    };
-
     return (
-        <Card sx={{ maxWidth: 345, margin: 1 }}>
+        <Card sx={{ width: "80vw", display: 'flex', margin: '1vh 0' }}>
+            <Box sx={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
             <CardMedia
-                component="img"
-                height="500"
-                image={props.imagePath}
-                alt={props.title}
+              component="img"
+              height="240"
+              image={props.imagePath}
+              alt={props.title}
+              sx={{width:'15%'}}
             />
-            <CardActions disableSpacing>
-                <ExpandMore
-                    expand={expanded}
-                    onClick={handleExpandClick}
-                    aria-expanded={expanded}
-                    aria-label="show more"
-                >
-                    <ExpandMoreIcon />
-                </ExpandMore>
-            </CardActions>
-            <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent>
-                    <CardHeader
-                    title={props.title}
-                    subheader={props.date}
-                    />
-                    <div>{props.description.map((e, index) => <Typography key={index} sx={{ marginBottom: 2 }}>{e}</Typography>)}</div>
-                </CardContent>
-            </Collapse>
+            <CardContent sx={{width:"90%"}}>
+            <CardActionArea>
+              <Typography gutterBottom variant="h5" component="div">
+                {props.title}
+              </Typography>
+              <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              <div>{props.description.map((e, index) => <Typography key={index} sx={{ marginBottom: 2 }}>{e}</Typography>)}</div>
+              </Typography>
+              </CardActionArea>
+            </CardContent>
+          </Box>
         </Card>
-    );
-}
+      );
+    }
 
 export default TherapyCard;

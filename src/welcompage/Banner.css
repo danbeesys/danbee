@@ -6,14 +6,14 @@
     padding-top: 15vh;
     overflow: hidden;
     display: flex;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
   }
   
 .banner-header-left {
   width: 20vw;
   height: 70vh;
-  background-color: #beb49f;
+  background-color: rgb(253, 253, 217);
 }
 
 .banner-header-left p {

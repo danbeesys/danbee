@@ -2,11 +2,14 @@ import style from "./IdentityTable.module.css"
 
 function IdentityTable() {
     return <table className={style.table__css}>
-        <caption>인적사항</caption>
+        <caption></caption>
         <tbody>
             <tr>
+                <th colSpan={2}>{"인적사항"}</th>
+            </tr>
+            <tr>
                 <th>{"상담 경력"}</th>
-                <td>{"11년"}</td>
+                <td>{"12년"}</td>
             </tr>
             <tr>
                 <th rowSpan={3}>{"학력"}</th>
@@ -23,8 +26,15 @@ function IdentityTable() {
                 <td>{"개인심리학, 정신분석, 대상관계"}</td>
             </tr>
             <tr>
-                <th rowSpan={6}>{"자격증"}</th>
+                <th>{"주요상담분야"}</th>
+                <td>{"우울, 불안, 분노, 스트레스, 학업코칭, 대인관계, 사회성 부족, 생애개발상담"}</td>
+            </tr>
+            <tr>
+                <th rowSpan={7}>{"자격증"}</th>
                 <td>{"국제아들러심리상담사(NASAP)"}</td>
+            </tr>
+            <tr>
+                <td>{"국제공인 아들러심리치료사 슈퍼바이저"}</td>
             </tr>
             <tr>
                 <td>{"한국상담학회 전문상담사 2급"}</td>
@@ -100,10 +110,6 @@ function IdentityTable() {
             <tr>
                 <th>{" 2012년"}</th>
                 <td>{" • 전, 평택대학교 부설 피어선 심리상담원 객원 심리상담사"}</td>
-            </tr>
-            <tr>
-                <th>{"주요상담분야"}</th>
-                <td>{"우울, 불안, 분노, 스트레스, 학업코칭, 대인관계, 사회성 부족, 생애개발상담"}</td>
             </tr>
             <tr>
                 <th colSpan={2}>{"연구분야"}</th>

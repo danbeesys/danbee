@@ -43,6 +43,10 @@ const Process: React.FC = () => {
                     <td>{"휴무"}</td>
                 </tr>
             </tbody>
+            <h3>예약방법</h3>
+            <p>전 화 : <a href='tel:PHONE'>031-714-1714</a> / <a href='tel:PHONE'>010-2493-1714</a></p>
+            <p>카카오톡 : <a href='https://open.kakao.com/o/syUYt8Qg' target='_blank'>단비 심리상담</a></p>
+            <p>인 스 타 : <a href='https://www.instagram.com/isunhyi2282' target='_blank'>isunhyi2282</a></p>
         </section>
 )
 };

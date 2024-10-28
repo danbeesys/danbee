@@ -2,6 +2,7 @@ import './FixedRightNav.css';
 import { Fab } from '@mui/material';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import MessageIcon from '@mui/icons-material/Message';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 import ContentPasteIcon from '@mui/icons-material/ContentPaste';
 import React from 'react';
@@ -20,6 +21,10 @@ const FixedRightNav: React.FC = () => {
           <Fab className='elem' variant="extended" size="small" color="primary" sx={{width:widthSize, mt:1, mb:1}} href='https://open.kakao.com/o/syUYt8Qg' target='_blank'>
               <MessageIcon sx={{ mr: iconMr }} />
               {isMobile ? "" : "카카오톡"}
+          </Fab>
+          <Fab className='elem' variant="extended" size="small" color="primary" sx={{width:widthSize, mt:1, mb:1}} href='https://www.instagram.com/isunhyi2282' target='_blank'>
+              <InstagramIcon sx={{ mr: iconMr }} />
+              {isMobile ? "" : "인스타그램"}
           </Fab>
           <Fab className='elem' variant="extended" size="small" color="primary" sx={{width:widthSize, mt:1, mb:1}} href='https://blog.naver.com/sephy6371' target='_blank'>
               <AssignmentIndIcon sx={{ mr: iconMr }} />

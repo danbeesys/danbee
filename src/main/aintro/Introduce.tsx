@@ -20,7 +20,7 @@ const Introduce: React.FC = () => {
                 cursor: 'pointer'
               }}/>
               <h2>이순희</h2>
-              <h3>심리전문가</h3>
+              <h3>상담학 Ph.D / 심리상담사 / 독서심리전문가</h3>
               <IdentityTable/>
             </div>
           </div>

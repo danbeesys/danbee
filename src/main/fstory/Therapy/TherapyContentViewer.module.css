@@ -1,5 +1,0 @@
-.therapy_content_viewer {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap onto the next line */
-    justify-content: space-between; /* Optional: space items evenly */
-}

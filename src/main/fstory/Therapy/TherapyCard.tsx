@@ -5,18 +5,19 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import Box from '@mui/material/Box';
+import styles from './TherapyCard.module.css';
 
 
 export interface TherapyContent {
     imagePath: string,
     title: string,
-    date: string,
+    author: string,
     description: string[]
 }
 
 const TherapyCard: React.FC<TherapyContent> = (props) => {
     return (
-        <Card sx={{ width: "80vw", display: 'flex', margin: '1vh 0' }}>
+        <Card sx={{ width: "75vw", display: 'flex', margin: '1vh 0' }}>
             <Box sx={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
             <CardMedia
               component="img"
@@ -30,8 +31,11 @@ const TherapyCard: React.FC<TherapyContent> = (props) => {
               <Typography gutterBottom variant="h5" component="div">
                 {props.title}
               </Typography>
+              <Typography gutterBottom variant="subtitle2" component="div">
+                {props.author}
+              </Typography>
               <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              <div>{props.description.map((e, index) => <Typography key={index} sx={{ marginBottom: 2 }}>{e}</Typography>)}</div>
+              <div className={styles.noto_sans_kr}>{props.description.map((e, index) => <Typography key={index} sx={{ marginBottom: 2 }}>{e}</Typography>)}</div>
               </Typography>
               </CardActionArea>
             </CardContent>

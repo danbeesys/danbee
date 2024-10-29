@@ -58,7 +58,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://danbeesys.github.io/danbee",
+  "homepage": "https://dan-bee.co.kr",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/react-image-gallery": "^1.2.4",

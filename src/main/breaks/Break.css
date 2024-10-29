@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gamja+Flower&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Orbit&family=Single+Day&display=swap');
+
+.break_font p {
+    font-size: 2rem;
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+}
+
+
+.break_from {
+    margin: 2rem 0 0 0;
+    font-size: 2rem;
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}

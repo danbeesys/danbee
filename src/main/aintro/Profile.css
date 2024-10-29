@@ -69,6 +69,21 @@
   background-color: #c0392b;
 }
 
+.button_style {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.button_content {
+  margin: 0 auto;
+}
+
+.button_arrow {
+  width: 0px;
+  height: 0px;
+}
+
 @media screen and (max-width: 768px) {
   .doctor-container {
     display: block;

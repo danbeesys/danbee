@@ -1,12 +1,21 @@
 import faceimg from "./face.jpg";
 import './Profile.css'
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const Profile: React.FC<{ onClick: () => void }> = ({ onClick }) => {
     return (
       <div className="doctor-container">
         <div className="doctor-image-container">
           <img src={faceimg} alt="이미지" />
-          <button onClick={onClick}>심리 전문가 소개</button>
+            <button onClick={onClick} className="button_style">
+              <div className="button_content">심리 상담 전문가 소개</div>
+              <div className="button_arrow">
+                <ArrowRightAltIcon sx={{
+                  transform: 'translate(-30px, -12px)',
+                  width: '50px',
+                }}/>
+              </div>
+            </button>
         </div>
         <div className="doctor-info">
           <h2>대표 인사말</h2>

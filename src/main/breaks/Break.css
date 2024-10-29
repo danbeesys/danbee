@@ -9,6 +9,15 @@
     margin: 0;
 }
 
+.break_img {
+    width: 30vw;
+    height: 20vw;
+    margin: 0 auto;
+}
+.break_img img {
+    width: 100%;
+    height: 100%;
+}
 
 .break_from {
     margin: 2rem 0 0 0;

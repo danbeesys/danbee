@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2e075506.css",
-    "main.js": "/static/js/main.9b76ab22.js",
+    "main.css": "/static/css/main.ce567656.css",
+    "main.js": "/static/js/main.678e61c1.js",
     "static/js/453.fb9f992d.chunk.js": "/static/js/453.fb9f992d.chunk.js",
     "static/media/20240710_133854.jpg": "/static/media/20240710_133854.7d73544cb58bfc8642c4.jpg",
     "static/media/20240610_메뉴간판.jpg": "/static/media/20240610_메뉴간판.7f7ca17bc5f24d37635a.jpg",
@@ -27,6 +27,7 @@
     "static/media/바람은 보이지 않아.jpeg": "/static/media/바람은 보이지 않아.416ff9677ea97427ea38.jpeg",
     "static/media/숲속에서.jpeg": "/static/media/숲속에서.4b70577c421975528547.jpeg",
     "static/media/KakaoTalk_20240627_도서사진.jpg": "/static/media/KakaoTalk_20240627_도서사진.89e1b88af5947605ea75.jpg",
+    "static/media/놀이치료2.jpg": "/static/media/놀이치료2.b04bdcb8c5a61ec96a66.jpg",
     "static/media/wave_tree.jpg": "/static/media/wave_tree.029e15b0ff704f4e0a0e.jpg",
     "static/media/나는 요,.jpeg": "/static/media/나는 요,.db242b0a15ad3e5ba100.jpeg",
     "static/media/psytest.jpg": "/static/media/psytest.3d13ff8536f4bfe13106.jpg",
@@ -50,12 +51,12 @@
     "static/media/visit.png": "/static/media/visit.22731a3970ff6fdfa0ff.png",
     "static/media/presentation.png": "/static/media/presentation.16d1b3017e5b7cc26a1e.png",
     "index.html": "/index.html",
-    "main.2e075506.css.map": "/static/css/main.2e075506.css.map",
-    "main.9b76ab22.js.map": "/static/js/main.9b76ab22.js.map",
+    "main.ce567656.css.map": "/static/css/main.ce567656.css.map",
+    "main.678e61c1.js.map": "/static/js/main.678e61c1.js.map",
     "453.fb9f992d.chunk.js.map": "/static/js/453.fb9f992d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e075506.css",
-    "static/js/main.9b76ab22.js"
+    "static/css/main.ce567656.css",
+    "static/js/main.678e61c1.js"
   ]
 }

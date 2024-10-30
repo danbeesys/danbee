@@ -24,7 +24,7 @@ const qna: AccordionContent[] = [
   {
     panel: 'panel1',
     title: '아이에게 심리검사가 왜 필요한가요?',
-    content: ['뭔가의 답변']
+    content: ['']
   }
 ]
 

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 
-.field_card, .field_card p {
-    width: 50vw;
-    height: 40vh;
+.field_card {
+    width: 35vw;
+    height: 25vh;
 }
 
 .field_card {
@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5% 0;
+    margin: 15% 0;
 }
 
 .field_card_pic {
@@ -40,15 +40,15 @@
 }
 
 .field_card h3 {
-    font-size: 4.3rem;
+    font-size: 3.3rem;
     width: 100%;
     height: 50%;
 }
 
 .field_card h4 {
     background-color: #FFFFFF;
-    font-size: 1.5rem;
-    padding: 15px 20px;
+    font-size: 0.9rem;
+    padding: 6px 10px;
     border-radius: 30px;
     cursor: pointer;
     color: #000;
@@ -56,12 +56,15 @@
 
 .field_card p {
     background-color: rgba(85, 81, 81, 0.8);
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     display: flex;
     text-align: center;
     align-items: center;
     z-index: 3;
     position: absolute;
+    padding: 3vh 3vw;
+    width: 29vw;
+    height: 19vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

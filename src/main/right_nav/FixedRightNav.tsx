@@ -30,10 +30,10 @@ const FixedRightNav: React.FC = () => {
               <AssignmentIndIcon sx={{ mr: iconMr }} />
               {isMobile ? "" : "블로그"}
           </Fab>
-          <Fab className='elem' variant="extended" size="small" color="primary" sx={{width:widthSize, mt:1, mb:1}}>
-              <ContentPasteIcon sx={{ mr: iconMr }} />
-              {isMobile ? "" : "상담 신청"}
-          </Fab>
+          {/* <Fab className='elem' variant="extended" size="small" color="primary" sx={{width:widthSize, mt:1, mb:1}}> */}
+              {/* <ContentPasteIcon sx={{ mr: iconMr }} /> */}
+              {/* {isMobile ? "" : "상담 신청"} */}
+          {/* </Fab> */}
       </nav>
     );
 };

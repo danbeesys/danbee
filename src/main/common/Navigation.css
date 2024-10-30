@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gamja+Flower&family=Gowun+Batang&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Jua&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Orbit&family=Single+Day&display=swap');
 
 .main-nav {
     position: fixed;
@@ -10,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    font-family: "Do Hyeon", sans-serif;
+    font-family: "Gowun Batang", serif;
     font-size: 1.2vw;
     height: fit-content;
   }

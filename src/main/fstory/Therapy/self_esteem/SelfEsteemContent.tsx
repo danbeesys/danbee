@@ -1,10 +1,10 @@
 import { Box } from '@mui/material';
 import TherapyCard, { TherapyContent } from '../TherapyCard';
-import img1 from "./pic/20240827_눈물바다.jpg";
+import img1 from "./pic/바람은 보이지 않아.jpeg";
 import img2 from "./pic/20240827_눈물바다.jpg";
 import img3 from "./pic/20240827_내 이름은 자가주.jpg";
 import img4 from "./pic/20240827_내 친구 월터.jpg";
-import img5 from "./pic/20240827_내 친구 월터.jpg";
+import img5 from "./pic/20240827_천만의 말씀.jpg";
 import img6 from "./pic/20240827_내 친구 월터.jpg";
 import img7 from "./pic/20240827_내 친구 월터.jpg";
 

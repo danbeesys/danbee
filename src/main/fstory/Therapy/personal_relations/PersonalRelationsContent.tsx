@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import TherapyCard, { TherapyContent } from '../TherapyCard';
 import img1 from "./pic/20240827_좋아 좋아, 싫어 싫어.jpg";
-import img2 from "./pic/20240827_좋아 좋아, 싫어 싫어.jpg";
+import img2 from "./pic/늑대와 아벨.jpeg";
 
 const therapyContent: TherapyContent[] = [
     {

@@ -35,7 +35,10 @@ const TherapyCard: React.FC<TherapyContent> = (props) => {
                 {props.author}
               </Typography>
               <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              <div className={styles.noto_sans_kr}>{props.description.map((e, index) => <Typography key={index} sx={{ marginBottom: 2 }}>{e}</Typography>)}</div>
+              {props.description.map((e, index) => <Typography key={index} sx={{
+                fontSize: '1rem',
+                fontFamily: 'Arial' // Roboto, Helvetica, Arial, sans-serif
+              }}>{e}</Typography>)}
               </Typography>
               </CardActionArea>
             </CardContent>

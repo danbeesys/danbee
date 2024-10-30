@@ -18,6 +18,12 @@
     display: block;
 }
 
+
+.program-body-right p {
+    font-size: 18px;
+  }
+  
+
 @media screen and (max-width: 768px) {
     .program-body {
         display: block;

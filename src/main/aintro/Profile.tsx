@@ -18,7 +18,7 @@ const Profile: React.FC<{ onClick: () => void }> = ({ onClick }) => {
             </button>
         </div>
         <div className="doctor-info">
-          <h2>대표 인사말</h2>
+          <h2>인사말</h2>
           <p>안녕하세요? <br/>
   저희 심리상담연구소를 찾아주셔서 감사합니다.<br/>
   하루 하루가 즐겁고 만족스런 날이 되길 모두 <b>소망</b>합니다.<br/>

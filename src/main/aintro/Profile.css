@@ -40,15 +40,17 @@
 
 .doctor-info h2 {
   margin: 0 0;
+  font-size: 2.5rem;
 }
 
 .doctor-info h3 {
   font-family: 'Arita-buri';
+  margin-top: 50px;
 }
 
 .doctor-info p {
   font-family: 'Pretendard';
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .doctor-info p b {

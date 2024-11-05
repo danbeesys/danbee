@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ce567656.css",
-    "main.js": "/static/js/main.678e61c1.js",
+    "main.js": "/static/js/main.d4fda0c4.js",
     "static/js/453.fb9f992d.chunk.js": "/static/js/453.fb9f992d.chunk.js",
     "static/media/20240710_133854.jpg": "/static/media/20240710_133854.7d73544cb58bfc8642c4.jpg",
     "static/media/20240610_메뉴간판.jpg": "/static/media/20240610_메뉴간판.7f7ca17bc5f24d37635a.jpg",
@@ -52,11 +52,11 @@
     "static/media/presentation.png": "/static/media/presentation.16d1b3017e5b7cc26a1e.png",
     "index.html": "/index.html",
     "main.ce567656.css.map": "/static/css/main.ce567656.css.map",
-    "main.678e61c1.js.map": "/static/js/main.678e61c1.js.map",
+    "main.d4fda0c4.js.map": "/static/js/main.d4fda0c4.js.map",
     "453.fb9f992d.chunk.js.map": "/static/js/453.fb9f992d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce567656.css",
-    "static/js/main.678e61c1.js"
+    "static/js/main.d4fda0c4.js"
   ]
 }

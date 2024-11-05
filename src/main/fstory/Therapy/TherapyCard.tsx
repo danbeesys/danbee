@@ -24,19 +24,19 @@ const TherapyCard: React.FC<TherapyContent> = (props) => {
               height="240"
               image={props.imagePath}
               alt={props.title}
-              sx={{width:'15%'}}
+              sx={{width:'15%', alignSelf:'center'}}
             />
             <CardContent sx={{width:"90%"}}>
-            <CardActionArea>
-              <Typography gutterBottom variant="h5" component="div">
+            <CardActionArea sx={{paddingLeft: "1.2vh"}}>
+              <Typography gutterBottom component="div" sx={{fontSize:"1.3rem", fontWeight:"1000"}}>
                 {props.title}
               </Typography>
-              <Typography gutterBottom variant="subtitle2" component="div">
+              <Typography gutterBottom component="div" sx={{fontSize:"0.8rem", paddingLeft:"1vw"}}>
                 {props.author}
               </Typography>
               <Typography variant="body2" sx={{ color: 'text.secondary' }}>
               {props.description.map((e, index) => <Typography key={index} sx={{
-                fontSize: '1rem',
+                fontSize: '0.8rem',
                 fontFamily: 'Arial' // Roboto, Helvetica, Arial, sans-serif
               }}>{e}</Typography>)}
               </Typography>

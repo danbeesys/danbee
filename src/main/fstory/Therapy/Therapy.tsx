@@ -21,7 +21,7 @@ const Therapy:  React.FC = () => {
                     fontWeight: 'bold',
                     mx: 0.5,
                     fontSize: 14,
-                  }}>애착</Typography>
+                  }}>부모와 자녀 사랑 키우기에 도움이 되는 도서</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography sx={{
@@ -42,7 +42,7 @@ const Therapy:  React.FC = () => {
                     fontWeight: 'bold',
                     mx: 0.5,
                     fontSize: 14,
-                  }}>자존감 향상</Typography>
+                  }}>아이의 자존감을 키워주는 도서</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography sx={{
@@ -63,7 +63,7 @@ const Therapy:  React.FC = () => {
                     fontWeight: 'bold',
                     mx: 0.5,
                     fontSize: 14,
-                  }}>대인관계</Typography>
+                  }}>타인과 좋은 관계 형성을 돕는 도서</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography sx={{

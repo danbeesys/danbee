@@ -1,6 +1,7 @@
 .map-section {
   display: flex;
-  margin-top: 40px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   padding: 0 10vw;
 }
 
@@ -32,6 +33,7 @@
 .map-info p {
   font-size: 1.3em;
   color: black;
+  width: 35vw;
 }
 
 @media (max-width: 768px) {

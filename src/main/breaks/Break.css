@@ -12,7 +12,7 @@
 .break_img {
     width: 15vw;
     height: 10vw;
-    margin: 10vh auto;
+    margin: 5vh auto;
 }
 .break_img img {
     width: 100%;
@@ -26,4 +26,8 @@
     font-weight: 400;
     font-style: normal;
     text-align: center;
+}
+
+.break_content {
+    margin: 5vh auto;
 }

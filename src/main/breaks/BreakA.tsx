@@ -7,9 +7,11 @@ const BreakA: React.FC = () => {
             <div className='break_img'>
                 <img src={img1}/>
             </div>
+            <div className='break_content'>
             <p>받아들이고자 마음을 여는 사람은 </p>
             <p>나뭇잎을 펼치고 빛을 향해가는 나무처럼</p>
             <p>생명을 펼치게 됩니다.</p>
+            </div>
             <div className='break_img'>
                 <img src={img2}/>
             </div>

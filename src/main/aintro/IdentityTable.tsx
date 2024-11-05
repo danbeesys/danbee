@@ -31,7 +31,7 @@ function IdentityTable() {
             </tr>
             <tr>
                 <th rowSpan={7}>{"자격증"}</th>
-                <td>{"국제아들러심리상담사(NASAP)"}</td>
+                <td>{"국제공인 아들러심리상담사(NASAP)"}</td>
             </tr>
             <tr>
                 <td>{"국제공인 아들러심리치료사 슈퍼바이저"}</td>

@@ -29,6 +29,7 @@ const Process: React.FC = () => {
             <h2>상담절차</h2>
             <SequentialBlocks blocks={processBlock}></SequentialBlocks>
             <h3>상담 운영시간</h3>
+            <div className='time_table'>
             <tbody className='process_table'>
                 <tr>
                     <th>{"평일"}</th>
@@ -43,10 +44,13 @@ const Process: React.FC = () => {
                     <td>{"휴무"}</td>
                 </tr>
             </tbody>
+            </div>
             <h3>예약방법</h3>
             <p>전 화 : <a href='tel:PHONE'>031-714-1714</a> / <a href='tel:PHONE'>010-2493-1714</a></p>
             <p>카카오톡 : <a href='https://open.kakao.com/o/syUYt8Qg' target='_blank'>단비 심리상담</a></p>
             <p>인 스 타 : <a href='https://www.instagram.com/isunhyi2282' target='_blank'>isunhyi2282</a></p>
+            <p className='mention_import'>※ 모든 상담은 한국상담심리학회, 한국상담학회의 윤리 강령에 근거하여 비밀보장을 원칙
+            으로 하고, 상담기록 등은 전산에 등록되지 않습니다</p>
         </section>
 )
 };

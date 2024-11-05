@@ -29,20 +29,27 @@ const SmartPhoneDiagnosisMarker: React.FC<SmartPhoneDiagnosisProps> = ({ questio
         }
         navigate('/diagnosis/smartphone/result', { state: {result: total / scoreMap.size}});
     };
-
+    const lastContent = "전혀 그렇지 않다 그렇지 않다 그렇다 매우 그렇다";
     return <form onSubmit={handleSubmit} className='supplier_body'>
         <FormControl>
+            <table>
+            <tr>
+                <td>No</td><td>문항</td><td>{lastContent}</td>
+            </tr>
             {questions.map((question, index) => (
+                <tr>
                 <React.Fragment key={index}>
+                    <td>{index+1}</td>
+                    <td>
                     <FormLabel 
                     id={`question-${index}`} 
                     focused={false}
                     sx={{
-                        fontSize: '25px',
-                        paddingTop: '30px',
+                        fontSize: '1.2rem',
+                        paddingTop: '0',
                         paddingBottom: '10px',
-                        alignSelf: 'center',
                     }}>{question}</FormLabel>
+                    </td>
                     <RadioGroup
                         row
                         aria-labelledby={`question-${index}`}
@@ -51,36 +58,57 @@ const SmartPhoneDiagnosisMarker: React.FC<SmartPhoneDiagnosisProps> = ({ questio
                         onChange={handleOnChange}
                         sx={{
                             alignSelf: 'center',
-                            paddingBottom: '30px'
                         }}
                     >
+                        <td>
                         <FormControlLabel
                             value="1"
                             control={<Radio />}
-                            label="전혀 그렇지 않다"
+                            label=""
                             labelPlacement="bottom"
+                            sx={{
+                                alignItems: 'top'
+                            }}
                         />
+                        </td>
+                        <td>
                         <FormControlLabel
                             value="2"
                             control={<Radio />}
-                            label="그렇지 않다"
+                            label=""
                             labelPlacement="bottom"
+                            sx={{
+                            alignItems: 'top'
+                            }}
                         />
+                        </td>
+                        <td>
                         <FormControlLabel
                             value="3"
                             control={<Radio />}
-                            label="그렇다"
+                            label=""
                             labelPlacement="bottom"
+                            sx={{
+                            alignItems: 'top'
+                            }}
                         />
+                        </td>
+                        <td>
                         <FormControlLabel
                             value="4"
                             control={<Radio />}
-                            label="매우 그렇다"
+                            label=""
                             labelPlacement="bottom"
+                            sx={{
+                              alignItems: 'top'
+                            }}
                         />
+                        </td>
                     </RadioGroup>
                 </React.Fragment>
+                </tr>
             ))}
+        </table>
         <Button sx={{ mt: 1, mr: 1, marginBottom: '30px' }} type="submit" variant="outlined" 
                 disabled={couldConfirm}>
           결과 확인

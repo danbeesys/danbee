@@ -6,6 +6,7 @@ import RadioGroup from "@mui/material/RadioGroup";
 import React, { useState } from "react";
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
+import style from './SmartPhoneDiagnosisMarker.module.css';
 
 export interface SmartPhoneDiagnosisProps {
     questions: string[];
@@ -29,12 +30,14 @@ const SmartPhoneDiagnosisMarker: React.FC<SmartPhoneDiagnosisProps> = ({ questio
         }
         navigate('/diagnosis/smartphone/result', { state: {result: total / scoreMap.size}});
     };
-    const lastContent = "전혀 그렇지 않다 그렇지 않다 그렇다 매우 그렇다";
+    const lastContent = "전혀 아니다    아니다  그렇다 매우 그렇다";
     return <form onSubmit={handleSubmit} className='supplier_body'>
         <FormControl>
-            <table>
+            <table >
             <tr>
-                <td>No</td><td>문항</td><td>{lastContent}</td>
+              <td>No</td><td>문항</td><td className={style.table_hole_style}>
+                <span>전혀 아니다</span><span>아니다</span><span>그렇다</span><span>매우 그렇다</span>
+              </td>
             </tr>
             {questions.map((question, index) => (
                 <tr>

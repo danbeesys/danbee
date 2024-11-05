@@ -1,0 +1,7 @@
+.table_hole_style {
+    white-space: nowrap;
+  
+    & > span {
+      margin-right: 36px;
+    }
+}

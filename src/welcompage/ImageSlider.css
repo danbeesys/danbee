@@ -4,7 +4,8 @@
   text-align: center;
   color: rgb(0, 0, 0);
   z-index: 2;
-  background-color: rgba(166, 167, 250, 0.801);
+  background-color: #9dc2c5cb;
+  background-color: #fff8e3dc;
   padding: 25px 20px;
 }
 
@@ -16,7 +17,7 @@
 
 .header-content p {
   font-size: 1.3em;
-  color: #F4E1CB;
+  color: #000000;
   margin: 0;
   text-align: left;
 }

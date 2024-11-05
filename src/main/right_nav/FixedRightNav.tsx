@@ -14,26 +14,22 @@ const FixedRightNav: React.FC = () => {
 
     return (
       <nav className="fix_nav">
-          <Fab className='elem' variant="extended" size="small" color="primary" sx={{width:widthSize, mt:1, mb:1}} href='tel:PHONE'>
-              <LocalPhoneIcon sx={{ mr: iconMr }} />
+          <Fab className='elem' variant="extended" size="small" color="primary" sx={{width:widthSize, mt:1, mb:1, backgroundColor: '#47729e' }} href='tel:PHONE'>
+              <LocalPhoneIcon sx={{ mr: iconMr}} />
               {isMobile ? "" : "031-714-1714"}
           </Fab>
-          <Fab className='elem' variant="extended" size="small" color="primary" sx={{width:widthSize, mt:1, mb:1}} href='https://open.kakao.com/o/syUYt8Qg' target='_blank'>
+          <Fab className='elem' variant="extended" size="small" color="primary" sx={{width:widthSize, mt:1, mb:1, backgroundColor: '#47729e'}} href='https://open.kakao.com/o/syUYt8Qg' target='_blank'>
               <MessageIcon sx={{ mr: iconMr }} />
               {isMobile ? "" : "카카오톡"}
           </Fab>
-          <Fab className='elem' variant="extended" size="small" color="primary" sx={{width:widthSize, mt:1, mb:1}} href='https://www.instagram.com/isunhyi2282' target='_blank'>
-              <InstagramIcon sx={{ mr: iconMr }} />
-              {isMobile ? "" : "인스타그램"}
-          </Fab>
-          <Fab className='elem' variant="extended" size="small" color="primary" sx={{width:widthSize, mt:1, mb:1}} href='https://blog.naver.com/sephy6371' target='_blank'>
+          <Fab className='elem' variant="extended" size="small" color="primary" sx={{width:widthSize, mt:1, mb:1, backgroundColor: '#47729e'}} href='https://blog.naver.com/sephy6371' target='_blank'>
               <AssignmentIndIcon sx={{ mr: iconMr }} />
               {isMobile ? "" : "블로그"}
           </Fab>
-          {/* <Fab className='elem' variant="extended" size="small" color="primary" sx={{width:widthSize, mt:1, mb:1}}> */}
-              {/* <ContentPasteIcon sx={{ mr: iconMr }} /> */}
-              {/* {isMobile ? "" : "상담 신청"} */}
-          {/* </Fab> */}
+          <Fab className='elem' variant="extended" size="small" color="primary" sx={{width:widthSize, mt:1, mb:1, backgroundColor: '#47729e'}} href='https://pcmap.place.naver.com/place/1646519455/booking?from=map&fromPanelNum=2&timestamp=202411052148' target='_blank'>
+              <ContentPasteIcon sx={{ mr: iconMr }} />
+              {isMobile ? "" : "상담 신청"}
+          </Fab>
       </nav>
     );
 };

@@ -2,6 +2,7 @@ import ImageSlider from "./ImageSlider";
 import Navigation from "../main/common/Navigation";
 import './Banner.css';
 import Footer from "../main/common/Footer";
+import FixedRightNav from "../main/right_nav/FixedRightNav";
 
 const Banner: React.FC = () => {
     return (
@@ -18,6 +19,7 @@ const Banner: React.FC = () => {
           <ImageSlider />
         </div>
         <Footer />
+        <FixedRightNav />
       </div>
     );
   };

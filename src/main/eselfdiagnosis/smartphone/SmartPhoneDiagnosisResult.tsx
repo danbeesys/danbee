@@ -33,9 +33,9 @@ const SmartPhoneDiagnosisResult: React.FC = () => {
     ];
 
     let resultIndex = 0;
-    if (location.state.result <= 2.78) {
+    if (location.state.result <= 39) {
         resultIndex = 0;
-    } else if (location.state.result <= 3.07) {
+    } else if (location.state.result <= 43) {
         resultIndex = 1;
     } else {
         resultIndex = 2;

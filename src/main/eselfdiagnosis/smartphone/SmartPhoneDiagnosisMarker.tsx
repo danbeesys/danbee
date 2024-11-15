@@ -28,7 +28,7 @@ const SmartPhoneDiagnosisMarker: React.FC<SmartPhoneDiagnosisProps> = ({ questio
         for (const e of scoreMap.values()) {
             total = total + e;
         }
-        navigate('/diagnosis/smartphone/result', { state: {result: total / scoreMap.size}});
+        navigate('/diagnosis/smartphone/result', { state: {result: total}});
     };
     const lastContent = "전혀 아니다    아니다  그렇다 매우 그렇다";
     return <form onSubmit={handleSubmit} className='supplier_body'>

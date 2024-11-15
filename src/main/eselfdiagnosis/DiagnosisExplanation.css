@@ -24,9 +24,14 @@
   border-radius: 0 0 10px 10px;
 }
 
+.diagnosis-explanation-link {
+  text-decoration: none;
+}
+
 .diagnosis-explanation h3 {
   color: var(--accent-color);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .diagnosis-explanation p {

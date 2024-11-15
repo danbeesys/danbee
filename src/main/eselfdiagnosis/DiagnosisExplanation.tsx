@@ -17,9 +17,11 @@ function DiagnosisExplanation(props: props) {
       <div className="diagnosis-explanations">
         {contents.map((content, index) => (
           <div key={index} className="diagnosis-item">
+            <Link to={content.link}>
             <img src={content.image} alt={`Image ${index + 1}`} />
+            </Link>
             <div className="diagnosis-explanation">
-              <Link to={content.link}><h3>{content.header}</h3></Link>
+              <Link className='diagnosis-explanation-link' to={content.link}><h3>{content.header}</h3></Link>
             </div>
           </div>
         ))}

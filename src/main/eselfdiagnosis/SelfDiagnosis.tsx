@@ -1,9 +1,7 @@
 import './SelfDiagnosis.css';
 import Footer from "../common/Footer";
 import Navigation from "../common/Navigation";
-import BoxSlider from '../common/BoxSlider';
-import activity from "../pic/20240610_125241.jpg";
-import smartPhoneImg from "./smartphone/pic/overUser.jpg";
+import smartPhoneImg from "./smartphone/pic/overUser.webp";
 import DiagnosisExplanation, { DiagnosisExplanationContent } from './DiagnosisExplanation';
 
 const personal: DiagnosisExplanationContent[] = [

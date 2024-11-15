@@ -1,8 +1,8 @@
 import { useLocation } from "react-router-dom";
 import Navigation from "../../common/Navigation";
-import workwellimg from "./pic/workwell.jpg"
-import overUserImg from "./pic/overUser.jpg"
-import highUserImg from "./pic/highUser.jpg"
+import workwellimg from "./pic/workwell.webp"
+import overUserImg from "./pic/overUser.webp"
+import highUserImg from "./pic/highUser.webp"
 import "./SmartPhoneDiagnosisResult.css";
 
 interface Result {

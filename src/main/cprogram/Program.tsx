@@ -1,5 +1,5 @@
 import './Program.css';
-import book from "./pic/book_pic.jpg";
+import counselImg from "./pic/studentCounsel.webp";
 import pictureTherapyImg from "./pic/KakaoTalk_20240627_도서사진.jpg";
 import playTherapyImg from "./pic/놀이치료2.jpg";
 import * as React from 'react';
@@ -27,7 +27,7 @@ const Program: React.FC = () => {
                   <img style={{
                       width: '20vw',
                       height: '15vw',
-                    }} src={book} />
+                    }} src={counselImg} />
                   </div>
             </div>
             <div className='program-body-right-content'>

@@ -36,29 +36,37 @@ const DepressionDiagnosisMarker: React.FC<DepressionDiagnosisProps> = ({ questio
         }
         navigate('/diagnosis/depression/result', { state: {result: total}});
     };
-    const lastContent = "전혀 아니다    아니다  그렇다 매우 그렇다";
     return <form onSubmit={handleSubmit} className='supplier_body'>
         <FormControl>
             <table>
             <tr>
-              <td>No</td><td>문항</td><td className={style.table_hole_style}>
-                <span>전혀 아니다</span><span>아니다</span><span>그렇다</span><span>매우 그렇다</span>
-              </td>
+              <td>No</td><td>문항</td>
+              <td className={style.table_hole_style}>
+                <div className={style.flex_container}>
+                    <span>극히<br/>드물다</span>
+                    <span>가끔<br/>있었다</span>
+                    <span>종종<br/>있었다</span>
+                    <span>대부분<br/>그렇다</span>
+                </div>
+                </td>
             </tr>
             {questions.map((question, index) => (
-                <tr>
-                <React.Fragment key={index}>
-                    <td>{index+1}</td>
-                    <td>
+                <tr key={index}>
+                <td>{index + 1}</td>
+                <td>
                     <FormLabel 
-                    id={`question-${index}`} 
-                    focused={false}
-                    sx={{
-                        fontSize: '1.2rem',
-                        paddingTop: '0',
-                        paddingBottom: '10px',
-                    }}>{question}</FormLabel>
-                    </td>
+                        id={`question-${index}`} 
+                        focused={false}
+                        sx={{
+                            fontSize: '1.2rem',
+                            paddingTop: '0',
+                            paddingBottom: '10px',
+                        }}
+                    >
+                        {question}
+                    </FormLabel>
+                </td>
+                <td colSpan={4}>
                     <RadioGroup
                         row
                         aria-labelledby={`question-${index}`}
@@ -69,7 +77,6 @@ const DepressionDiagnosisMarker: React.FC<DepressionDiagnosisProps> = ({ questio
                             alignSelf: 'center',
                         }}
                     >
-                        <td>
                         <FormControlLabel
                             value="0"
                             control={<Radio />}
@@ -79,43 +86,36 @@ const DepressionDiagnosisMarker: React.FC<DepressionDiagnosisProps> = ({ questio
                                 alignItems: 'top'
                             }}
                         />
-                        </td>
-                        <td>
                         <FormControlLabel
                             value="1"
                             control={<Radio />}
                             label=""
                             labelPlacement="bottom"
                             sx={{
-                            alignItems: 'top'
+                                alignItems: 'top'
                             }}
                         />
-                        </td>
-                        <td>
                         <FormControlLabel
                             value="2"
                             control={<Radio />}
                             label=""
                             labelPlacement="bottom"
                             sx={{
-                            alignItems: 'top'
+                                alignItems: 'top'
                             }}
                         />
-                        </td>
-                        <td>
                         <FormControlLabel
                             value="3"
                             control={<Radio />}
                             label=""
                             labelPlacement="bottom"
                             sx={{
-                              alignItems: 'top'
+                                alignItems: 'top'
                             }}
                         />
-                        </td>
                     </RadioGroup>
-                </React.Fragment>
-                </tr>
+                </td>
+            </tr>            
             ))}
         </table>
         <Button sx={{ mt: 1, mr: 1, marginBottom: '30px' }} type="submit" variant="outlined" 

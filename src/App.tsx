@@ -9,6 +9,8 @@ import ParentDiagnosis from './main/eselfdiagnosis/parent/ParentDiagnosis';
 import ParentDiagnosisResult from './main/eselfdiagnosis/parent/ParentDiagnosisResult';
 import SmartPhoneDiagnosis from './main/eselfdiagnosis/smartphone/SmartPhoneDiagnosis';
 import SmartPhoneDiagnosisResult from './main/eselfdiagnosis/smartphone/SmartPhoneDiagnosisResult';
+import DepressionDiagnosis from './main/eselfdiagnosis/depression/DepressionDiagnosis';
+import DepressionDiagnosisResult from './main/eselfdiagnosis/depression/DepressionDiagnosisResult';
 
 const App: React.FC = () => {
   return (
@@ -20,6 +22,8 @@ const App: React.FC = () => {
         <Route path ="/diagnosis" element={<SelfDiagnosis />}></Route>
         <Route path ="/diagnosis/smartphone" element={<SmartPhoneDiagnosis />}></Route>
         <Route path ="/diagnosis/smartphone/result" element={<SmartPhoneDiagnosisResult />}></Route>
+        <Route path ="/diagnosis/depression" element={<DepressionDiagnosis />}></Route>
+        <Route path ="/diagnosis/depression/result" element={<DepressionDiagnosisResult />}></Route>
         <Route path ="/diagnosis/parent" element={<ParentDiagnosis />}></Route>
         <Route path ="/diagnosis/parent/result" element={<ParentDiagnosisResult />}></Route>
         <Route path ="*" element={<NotFound />}></Route>

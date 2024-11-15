@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4a3c64e5.css",
-    "main.js": "/static/js/main.c3ee6797.js",
+    "main.css": "/static/css/main.990f624e.css",
+    "main.js": "/static/js/main.dabf95fc.js",
     "static/js/453.fb9f992d.chunk.js": "/static/js/453.fb9f992d.chunk.js",
     "static/media/20240710_133854.jpg": "/static/media/20240710_133854.7d73544cb58bfc8642c4.jpg",
     "static/media/20240610_메뉴간판.jpg": "/static/media/20240610_메뉴간판.7f7ca17bc5f24d37635a.jpg",
@@ -32,11 +32,13 @@
     "static/media/psytest.jpg": "/static/media/psytest.3d13ff8536f4bfe13106.jpg",
     "static/media/wonthuri.jpg": "/static/media/wonthuri.af755baae24c51615b92.jpg",
     "static/media/logo.png": "/static/media/logo.01689f9dd48d13018d11.png",
+    "static/media/normal.webp": "/static/media/normal.1db91cb4b6990166c76d.webp",
     "static/media/group.webp": "/static/media/group.4a05a7d4ace195b10fbe.webp",
     "static/media/bare2.webp": "/static/media/bare2.f60ff80f733802b5ba7c.webp",
     "static/media/bare1.webp": "/static/media/bare1.d28e167ddb6bbfe182f6.webp",
     "static/media/overUser.webp": "/static/media/overUser.c80437e4b5a3c1982105.webp",
     "static/media/studentCounsel.webp": "/static/media/studentCounsel.8e6adc1b3d84487fc8e0.webp",
+    "static/media/danger.webp": "/static/media/danger.e0b2424dfd21d5285da6.webp",
     "static/media/tree_birth.webp": "/static/media/tree_birth.5917a3aeec7c1648c684.webp",
     "static/media/workwell.webp": "/static/media/workwell.353a95d95e553a972d7e.webp",
     "static/media/headache.webp": "/static/media/headache.dab5bd35c5ba470f2854.webp",
@@ -51,12 +53,12 @@
     "static/media/visit.png": "/static/media/visit.22731a3970ff6fdfa0ff.png",
     "static/media/presentation.png": "/static/media/presentation.16d1b3017e5b7cc26a1e.png",
     "index.html": "/index.html",
-    "main.4a3c64e5.css.map": "/static/css/main.4a3c64e5.css.map",
-    "main.c3ee6797.js.map": "/static/js/main.c3ee6797.js.map",
+    "main.990f624e.css.map": "/static/css/main.990f624e.css.map",
+    "main.dabf95fc.js.map": "/static/js/main.dabf95fc.js.map",
     "453.fb9f992d.chunk.js.map": "/static/js/453.fb9f992d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a3c64e5.css",
-    "static/js/main.c3ee6797.js"
+    "static/css/main.990f624e.css",
+    "static/js/main.dabf95fc.js"
   ]
 }

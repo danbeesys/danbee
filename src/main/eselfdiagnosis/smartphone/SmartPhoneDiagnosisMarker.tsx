@@ -3,7 +3,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormLabel from "@mui/material/FormLabel";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 import style from './SmartPhoneDiagnosisMarker.module.css';
@@ -19,9 +19,15 @@ const SmartPhoneDiagnosisMarker: React.FC<SmartPhoneDiagnosisProps> = ({ questio
 
     const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const answerEvent = (event.target as HTMLInputElement);
-        setScoreMap(scoreMap.set(answerEvent.name, parseInt(answerEvent.value)));
-        setCouldConfirm(scoreMap.size !== questions.length);
+        setScoreMap(prevMap => {
+            const newMap = new Map(prevMap);
+            newMap.set(answerEvent.name, parseInt(answerEvent.value));
+            return newMap;
+        })
     }
+    useEffect(() => {
+        setCouldConfirm(scoreMap.size !== questions.length);
+    }, [scoreMap.size]);
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         let total:number = 0;

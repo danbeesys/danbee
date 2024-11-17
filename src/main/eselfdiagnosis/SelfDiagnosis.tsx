@@ -3,10 +3,12 @@ import Footer from "../common/Footer";
 import Navigation from "../common/Navigation";
 import smartPhoneImg from "./smartphone/pic/overUser.webp";
 import depressionImg from "./depression/pic/danger.webp";
+import internetOveruseImg from "./internetOveruse/pic/highRisk.webp";
 import DiagnosisExplanation, { DiagnosisExplanationContent } from './DiagnosisExplanation';
 
 const personal: DiagnosisExplanationContent[] = [
     { image: smartPhoneImg, header: "스마트폰 과다 사용 자가 진단", link: "/diagnosis/smartphone" },
+    { image: internetOveruseImg, header: "인터넷 과다사용 자가 진단", link: "/diagnosis/internetoveruse" },
     { image: depressionImg, header: "우울증 자가 진단", link: "/diagnosis/depression" },
     //{ image: activity, header: "부모양육태도 검사", link: "/diagnosis/parent" },
   ];

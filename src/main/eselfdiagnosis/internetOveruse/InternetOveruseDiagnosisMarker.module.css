@@ -1,0 +1,23 @@
+.table_hole_style {
+    white-space: nowrap;
+  
+    & > span {
+      margin-right: 36px;
+    }
+}
+
+.table_hole_style {
+  text-align: center;
+  padding: 10px;
+}
+
+.flex_container {
+  display: flex;
+  justify-content: space-between; /* 4개의 요소를 균등하게 분배 */
+  width: 100%; /* 셀 전체에 맞추기 */
+}
+
+.flex_container span {
+  flex: 1; /* 각 span을 동일한 비율로 배치 */
+  text-align: center; /* 텍스트를 중앙 정렬 */
+}

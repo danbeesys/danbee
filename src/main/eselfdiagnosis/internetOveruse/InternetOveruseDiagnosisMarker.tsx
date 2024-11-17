@@ -12,6 +12,21 @@ export interface InternetOveruseDiagnosisProps {
     questions: string[];
 }
 
+interface QuestionGroup {
+  start: number;
+  end: number;
+}
+
+const QUESTION_GROUPS: Record<number, QuestionGroup> = {
+  1: { start: 1, end: 9 },
+  2: { start: 10, end: 12 },
+  3: { start: 13, end: 18 },
+  4: { start: 19, end: 24 },
+  5: { start: 25, end: 29 },
+  6: { start: 30, end: 35 },
+  7: { start: 36, end: 40 }
+};
+
 const InternetOveruseDiagnosisMarker: React.FC<InternetOveruseDiagnosisProps> = ({ questions }) => {
     const [scoreMap, setScoreMap] = useState(new Map<string, number>());
     const [couldConfirm, setCouldConfirm] = useState(true);
@@ -29,76 +44,27 @@ const InternetOveruseDiagnosisMarker: React.FC<InternetOveruseDiagnosisProps> = 
         setCouldConfirm(scoreMap.size !== questions.length);
     }, [scoreMap.size]);
 
+    const calculateGroupScore = (groupNum: number, scores: Map<string, number>): number => {
+        const group = QUESTION_GROUPS[groupNum];
+        let total = 0;
+        
+        for (let i = group.start; i <= group.end; i++) {
+            const score = scores.get(`question-radio-group-${i-1}`);
+            if (score) total += score;
+        }
+        
+        return total;
+    };
+
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        let total1:number = 0;
-        let total2:number = 0;
-        let total3:number = 0;
-        let total4:number = 0;
-        let total5:number = 0;
-        let total6:number = 0;
-        let total7:number = 0;
+        
+        const results = Object.keys(QUESTION_GROUPS).reduce((acc, groupNum) => ({
+            ...acc,
+            [`result${groupNum}`]: calculateGroupScore(Number(groupNum), scoreMap)
+        }), {});
 
-        for (const [key, values] of scoreMap.entries()) {
-            if (key.endsWith("-1") 
-             || key.endsWith("-2")
-             || key.endsWith("-3")
-             || key.endsWith("-4")
-             || key.endsWith("-5")
-             || key.endsWith("-6")
-             || key.endsWith("-7")
-             || key.endsWith("-8")
-             || key.endsWith("-9")) {
-                        total1 = total1 + values;
-            } else if (key.endsWith("-10") 
-                    || key.endsWith("-11")
-                    || key.endsWith("-12")) {
-                        total2 = total2 + values;
-            } else if (key.endsWith("-13") 
-                    || key.endsWith("-14")
-                    || key.endsWith("-15")
-                    || key.endsWith("-16")
-                    || key.endsWith("-17")
-                    || key.endsWith("-18")) {
-                        total3 = total3 + values;
-            } else if (key.endsWith("-19") 
-                    || key.endsWith("-20")
-                    || key.endsWith("-21")
-                    || key.endsWith("-22")
-                    || key.endsWith("-23")
-                    || key.endsWith("-24")) {
-                        total4 = total4 + values;
-            } else if (key.endsWith("-25") 
-                    || key.endsWith("-26")
-                    || key.endsWith("-27")
-                    || key.endsWith("-28")
-                    || key.endsWith("-29")) {
-                        total5 = total5 + values;
-            } else if (key.endsWith("-30") 
-                    || key.endsWith("-31")
-                    || key.endsWith("-32")
-                    || key.endsWith("-33")
-                    || key.endsWith("-34")
-                    || key.endsWith("-35")) {
-                        total6 = total6 + values;
-            } else if (key.endsWith("-36") 
-                    || key.endsWith("-37")
-                    || key.endsWith("-38")
-                    || key.endsWith("-39")
-                    || key.endsWith("-40")) {
-                        total7 = total7 + values;
-            }
-        }
-
-        navigate('/diagnosis/internetoveruse/result', { state: {
-            result1: total1,
-            result2: total2,
-            result3: total3,
-            result4: total4,
-            result5: total5,
-            result6: total6,
-            result7: total7,
-        }});
+        navigate('/diagnosis/internetoveruse/result', { state: results });
     };
 
     return <form onSubmit={handleSubmit} className='supplier_body'>
